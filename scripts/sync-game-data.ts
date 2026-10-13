@@ -8,6 +8,10 @@ import { generateMetadataI18n } from './lib/generate-metadata'
 import { generateStatI18n } from './lib/generate-stat-i18n'
 import { generateCharacterI18n } from './lib/generate-characters'
 import { generateWikiData } from './lib/generate-wiki-data'
+import { loadGachaPoolData } from './lib/gacha-pools'
+import { describeForesightData, generateForesightData } from './lib/generate-foresight'
+import { migrateForesightWeapons } from './lib/migrate-foresight-weapons'
+import { updateBannerFile } from './lib/update-banner-file'
 import { exportGameI18nTables } from './lib/export-game-i18n'
 import { compareWeapons } from './lib/compare-weapons'
 import { compareEquips } from './lib/compare-equips'
@@ -205,6 +209,35 @@ async function main() {
   mkdirSync(generatedRoot, { recursive: true })
 
   // Weapons (AKEData as source)
+  // Foresight weapons: 未上线武器 (不在 WeaponBasicTable 里, 许愿单交叉验证)。
+  // 与已上线武器同一套流程 —— 客户端前瞻表已给出正式 id + 多语言名, 所以这里直接把前瞻条目
+  // 迁进 src/data/weapons.ts (**保留 source: 'preview'** 的前瞻状态), 后面的 Weapons 步骤
+  // (compareWeapons / updateWeaponsFile / generateWeaponI18n) 会把它们当普通武器处理;
+  // 实装那天由 updatePreviewWeapons + updateWeaponsFile 接管其余字段。
+  console.log('\n-- Foresight weapons --')
+  const foresight = generateForesightData(paths.akedata)
+  for (const line of describeForesightData(foresight)) console.log('  ' + line)
+  // 上场条目唯一命中 -> 迁到正式 id; 任何字段与上游对不上就只报告不迁移 (migrate-foresight-weapons.ts)
+  const foresightTargets = foresight.weapons
+    .filter((weapon) => weapon.match === 'unique' && weapon.matchedEntryIds.length === 1)
+    .map((weapon) => ({
+      formalId: weapon.id,
+      // 迁移过之后条目 id 就是正式 id; 迁移模块把这种情况当"已迁移"处理 (只补 source)
+      previewId: weapon.matchedEntryIds[0],
+      name: weapon.names?.['zh-CN'] ?? '',
+      rarity: weapon.rarity,
+      weaponTypeId: weapon.weaponTypeId,
+      gemTagIds: weapon.gemTagIds,
+      iconId: weapon.iconId,
+    }))
+  const foresightMigration = migrateForesightWeapons(join(projectRoot, 'src', 'data', 'weapons.ts'), foresightTargets, mode === 'update')
+  for (const entry of foresightMigration.migrated) {
+    console.log(`  迁移到正式 id: ${entry.previewId} -> ${entry.formalId} (保留 source: 'preview')`)
+  }
+  if (foresightMigration.already.length > 0) console.log(`  已是正式 id: ${foresightMigration.already.join(', ')}`)
+  if (foresightMigration.repaired.length > 0) console.log(`  补上前瞻状态 source: 'preview': ${foresightMigration.repaired.join(', ')}`)
+  for (const reason of foresightMigration.skipped) console.warn(`  SKIPPED ${reason}`)
+
   console.log('\n-- Weapons --')
   const charWpnRecPath = join(paths.akedata, 'TableCfg', 'CharWpnRecommendTable.json')
   const charWpnRec = existsSync(charWpnRecPath)
@@ -258,7 +291,11 @@ async function main() {
     if (iconIdFix.added > 0 || iconIdFix.updated > 0) {
       console.log(`  iconId reconciled: ${iconIdFix.added} added, ${iconIdFix.updated} updated, ${iconIdFix.unchanged} unchanged`)
     }
-    const wI18n = generateWeaponI18n(paths.akedata, generatedRoot)
+    const wI18n = generateWeaponI18n(paths.akedata, generatedRoot, foresight.weapons.map((weapon) => ({
+      id: weapon.id,
+      rarity: weapon.rarity,
+      names: weapon.names ?? {},
+    })))
     console.log(`  i18n: ${wI18n.written.length} files, ${wI18n.count} wpns, ${wI18n.missing} missing`)
     const ws = generateWeaponStatsI18n(paths.akedata, generatedRoot)
     console.log(`  weaponStats: ${ws.written.length} files, ${ws.count} entries, ${ws.missing} missing`)
@@ -323,6 +360,27 @@ async function main() {
       console.log(`  Acquisition warnings: ${wk.acquisitionWarnings.length}`)
       for (const warning of wk.acquisitionWarnings) console.log(`    ${warning}`)
     }
+  }
+
+  // Foresight weapons 已在上方 Weapons 步骤之前处理 (迁移正式 id + i18n), 此处不再重复。
+
+  // Gacha pools: 客户端 UP 名单 + 实际时间档 (entry[0]), 直接写进 src/data/banner.ts
+  // (与武器/装备同样的做法: 数据只有一个落点, 没有并行的生成文件在运行时合并)
+  if (mode === 'update') {
+    console.log('\n-- Gacha pools -> banner.ts --')
+    const pools = loadGachaPoolData(paths.akedata)
+    // 客户端角色 id -> 简中名: 必须在 Wiki data 步骤跑完之后读 (那是它被重新生成的时刻),
+    // 否则拿到的可能是旧文件, 新角色的 UP 名单就匹配不上。
+    let characterNameById: Record<string, string> = {}
+    try {
+      characterNameById = JSON.parse(readFileSync(join(generatedRoot, 'characters', 'zh-CN.json'), 'utf-8')) as Record<string, string>
+    } catch {
+      console.warn('  ⚠ 角色名映射缺失, 卡池按 UP 角色匹配会退化')
+    }
+    const bannerUpdate = updateBannerFile(join(projectRoot, 'src', 'data', 'banner.ts'), pools.pools, characterNameById, true)
+    const changed = bannerUpdate.updated.reduce((sum, entry) => sum + entry.changes.length, 0)
+    console.log(`  ${pools.pools.length} 个卡池, banner.ts ${bannerUpdate.updated.length} 个条目按上游更新 (${changed} 处)`)
+    for (const issue of bannerUpdate.issues) console.warn(`  ⚠ ${issue}`)
   }
 
   // Generate stat i18n — gemStats (weapons/dungeons) + equipStats (equipment)

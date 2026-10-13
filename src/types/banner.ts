@@ -138,3 +138,10 @@ export interface TimelineTooltip {
   y: number
 }
 
+
+/**
+ * 客户端卡池类型 (`GachaCharPoolTable.type`)。
+ * 0=特许(新角色) 1=新手 2=基础(常驻) 3=联合 4=复刻；与池 id 前缀互相印证。
+ */
+
+

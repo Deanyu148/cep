@@ -43,6 +43,8 @@ function PoolCard({
   onSelect: (visual: BannerEntry) => void
 }) {
   const locale = useLocale()
+  // 档期已由同步按客户端数据就地写入 banner.ts (见 scripts/lib/update-banner-file.ts)
+  const window = { start: visual.periodStart, end: visual.periodEnd }
   const cardRef = useRef<HTMLButtonElement | null>(null)
   const [inView, setInView] = useState(eager)
 
@@ -105,7 +107,7 @@ function PoolCard({
           </p>
         )}
         <p className="text-[10px] text-white/60 mt-1">
-          {formatDate(visual.periodStart, locale)} - {formatDate(visual.periodEnd, locale)}
+          {formatDate(window.start, locale)} - {formatDate(window.end, locale)}
         </p>
       </div>
     </Button>
@@ -117,6 +119,7 @@ export function PoolInfoStrip() {
   const locale = useLocale()
   const [selectedVisual, setSelectedVisual] = useState<BannerEntry | null>(null)
   const [cardState, setCardState] = useState<'closed' | 'open' | 'closing'>('closed')
+
   const closeTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined)
   const scrollerRef = useRef<HTMLDivElement | null>(null)
 

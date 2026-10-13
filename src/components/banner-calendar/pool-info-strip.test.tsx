@@ -24,6 +24,7 @@ vi.mock('@/data/banner', () => ({
       featured: [{ name: '诀', period: 9 }],
     },
   ],
+  // 档期辅助函数: 测试里直接用条目自带的公告口径
 }))
 
 afterEach(() => {

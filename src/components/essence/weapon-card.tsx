@@ -66,9 +66,12 @@ export const WeaponCard = memo(function WeaponCard({
   const wid = weapon.id || 'wpn_sword_0001'
   const isCustom = wid.startsWith('custom-')
   const isPreview = wid.startsWith('preview:')
+  // 前瞻 (未上线) 状态由同步维护: 前瞻表里有 -> source: 'preview', 实装后自动去掉 (见 scripts/lib/migrate-foresight-weapons.ts)
+  const isForesight = weapon.source === 'preview'
+  const showsPlaceholderArt = isCustom || isPreview
   // 优先使用 iconId（游戏原始资源映射，如 wpn_funnel_0008/0010 交叉指向）
   const imageId = weapon.iconId ?? wid
-  const imageSrc = (isCustom || isPreview) ? undefined : wid.startsWith('data:')
+  const imageSrc = showsPlaceholderArt ? undefined : wid.startsWith('data:')
     ? wid
     : withImageCacheVersion(`/images/weapon/${imageId}.avif`)
   const displayName = (isCustom || isPreview) ? weapon.name : (t(`weapons.${wid}`) ?? weapon.name)
@@ -105,7 +108,7 @@ export const WeaponCard = memo(function WeaponCard({
       <ItemFrameBackground />
       {/* Weapon art */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
-        {isCustom || isPreview ? (
+        {showsPlaceholderArt ? (
           <span className="text-2xl font-bold text-white/50 select-none absolute inset-0 flex items-center justify-center">{weapon.name?.charAt(0) ?? '?'}</span>
         ) : (
           <Image
@@ -176,7 +179,7 @@ export const WeaponCard = memo(function WeaponCard({
       )}
 
       {/* Preview badge — only when not UP */}
-      {!isOnBanner && weapon.source === 'preview' && (
+      {!isOnBanner && isForesight && (
         <div className="absolute top-2 right-0 z-30">
           <Image
             src="/preview.png"

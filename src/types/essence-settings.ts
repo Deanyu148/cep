@@ -20,6 +20,9 @@ export interface EssenceSettingsFlags {
   enableOwnershipEditPlans: boolean
   enableNotesPlans: boolean
 
+  // ── 多账号 ──
+  /** 按账号隔离基质规划器已选武器（默认开启）。关闭则所有账号共用同一份选择。 */
+  separateSelectionPerAccount: boolean
 }
 
 export type SettingKey = keyof EssenceSettingsFlags
@@ -34,6 +37,25 @@ export interface EssenceAccount {
   weaponOwnership: Record<string, boolean>
   essenceStatus: Record<string, boolean>
   weaponNotes: Record<string, string>
+  /**
+   * 该账号在基质规划器里已选的武器 id。
+   *
+   * 权威副本存在账号里（跟随导入/导出/云同步一起走），规划器 store 的扁平
+   * `selectedWeaponIds` 始终是「当前账号」的镜像（见 useMatrixStore）。
+   */
+  selectedWeaponIds: string[]
+}
+
+/**
+ * Untrusted marks patch (import file / third-party data). Values are sanitized
+ * by the store, so any shape is accepted here.
+ */
+export interface AccountMarksPatch {
+  weaponOwnership?: unknown
+  essenceStatus?: unknown
+  weaponNotes?: unknown
+  /** 省略 = 保留目标账号已有的选择（旧备份文件不带这个字段）。 */
+  selectedWeaponIds?: unknown
 }
 
 /**
@@ -86,6 +108,17 @@ export type EssenceSettingsState = EssenceSettingsFlags &
     setActiveAccount: (accountId: string) => void
     /** Replace all profiles from a cloud payload (keeps active id when possible). */
     applyAccounts: (accounts: EssenceAccount[]) => void
+    /** Replace all profiles from an import file; prefers the file's active account id. */
+    restoreAccounts: (accounts: unknown, activeAccountId?: unknown) => void
+    /** Replace one profile's marks (single-account import / third-party essence data). */
+    replaceAccountMarks: (accountId: string | undefined, marks: AccountMarksPatch) => void
+    /**
+     * Store one profile's weapon selection.
+     *
+     * Unlike replaceAccountMarks this never falls back to the active account:
+     * 账号切换时旧账号可能已被删除/替换，回退会把选择写到错误的账号上。
+     */
+    setAccountSelection: (accountId: string, weaponIds: readonly string[]) => void
     setHiddenAcquisitionCategories: (scope: 'list' | 'plans', categoryIds: string[]) => void
     setRegionFirst: (region: string | null) => void
     setRegionSecond: (region: string | null) => void
