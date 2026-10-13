@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import { HeadScript } from "@/components/shared/head-script";
 import { APP_INIT_DONE_SCRIPT } from '@/lib/app-init-done-script';
+import { STRIP_REFRESH_PARAM_SCRIPT } from '@/lib/strip-refresh-param';
 import { versionData } from '@/generated/version-data';
 import { buildNotFoundLocaleScript } from '@/lib/not-found-locale';
 import { OPS_SERVICE_ORIGIN } from '@/lib/constants';
@@ -61,6 +62,17 @@ export default function RootLayout({
           id="no-js-remove"
           code="document.documentElement.classList.remove('no-js')"
         />
+        {/* Cache-busting param cleanup for useVersion().refreshPage().
+            Must run before hydration: the App Router reads window.location once,
+            at hydrate() time, and anything still in the URL then becomes the
+            route's canonicalUrl inside the segment cache — which later
+            navigations to that route paste back into the address bar. A React
+            effect is too late to undo it; see @/lib/strip-refresh-param.
+            Sitting after the stylesheet <link> (React head children always do)
+            costs nothing here: a sync script is blocked by it, so the parser
+            cannot reach the inline RSC flight payload at the end of <body> —
+            and therefore hydration cannot start — before this has run. */}
+        <HeadScript id="strip-refresh-param" code={STRIP_REFRESH_PARAM_SCRIPT} />
         {/* Init curtain: when a previous load in this tab already completed the
             startup sequence, mark <html> so CSS hides [data-app-init] from the
             very first paint. Without this the curtain would be painted from the

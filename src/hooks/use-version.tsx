@@ -3,6 +3,7 @@
 import { createContext, useContext, useState, useEffect, useRef, useCallback, type ReactNode } from 'react'
 import type { VersionInfo } from '@/types/version'
 import { MIN_LOADING_DISPLAY_MS } from '@/lib/constants'
+import { REFRESH_CACHE_BUST_PARAM } from '@/lib/strip-refresh-param'
 
 const POLL_INTERVAL = 5 * 60 * 1000
 const FOCUS_CD = 30 * 1000
@@ -115,21 +116,17 @@ export function VersionProvider({ children, initialInfo }: { children: ReactNode
   const refreshPage = useCallback(() => {
     // Cache-busting: append a unique query param to force a full network request.
     // This avoids both bfcache (unlike reload()) and HTTP disk cache (unlike plain
-    // replace()). The _t param is stripped from the URL on next mount via the
-    // effect below, so it never lingers in the address bar or client-side navigations.
+    // replace()).
+    //
+    // The param is stripped from the address bar by an inline <head> script
+    // (STRIP_REFRESH_PARAM_SCRIPT) — NOT by an effect here. Once React has
+    // hydrated, the App Router has already recorded the `?_t=…` URL as this
+    // route's canonicalUrl and cached it in the segment cache, so stripping it
+    // afterwards makes every later navigation to the same route paste the stale
+    // timestamp back into the URL. See src/lib/strip-refresh-param.ts.
     const url = new URL(window.location.href)
-    url.searchParams.set('_t', Date.now().toString())
+    url.searchParams.set(REFRESH_CACHE_BUST_PARAM, Date.now().toString())
     window.location.replace(url.toString())
-  }, [])
-
-  // Strip the cache-busting _t param left by refreshPage() so it doesn't
-  // persist in the URL bar or leak into subsequent client-side navigations.
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const url = new URL(window.location.href)
-    if (!url.searchParams.has('_t')) return
-    url.searchParams.delete('_t')
-    window.history.replaceState(window.history.state, '', url.toString())
   }, [])
 
   useEffect(() => {
