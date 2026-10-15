@@ -102,3 +102,36 @@ describe('migrateForesightWeaponsFile', () => {
     expect(result.content).toContain("id: 'wpn_claym_0019', name: '悠久传承'")
   })
 })
+
+describe('released weapon demotion', () => {
+  /** 迁完正式 id 的文件状态: 3 把前瞻武器都带 source: 'preview' (真实 1.6 前瞻现场)。 */
+  const migratedTs = () => migrateForesightWeaponsFile(WEAPONS_TS, TARGETS).content
+  /** 只有唤月仍在前瞻表里 (未实装)。 */
+  const stillForesight: ForesightWeaponTarget[] = [{ ...TARGETS[2], previewId: 'wpn_sword_0025' }]
+
+  it('drops source: preview for entries upstream has released', () => {
+    const result = migrateForesightWeaponsFile(migratedTs(), stillForesight, ['wpn_claym_0018', 'wpn_claym_0019', 'wpn_sword_0023'])
+    expect(result.demoted).toEqual(['wpn_claym_0018', 'wpn_claym_0019'])
+    expect(result.content).not.toMatch(/id: 'wpn_claym_0018'[^\n]*source: 'preview'/)
+    expect(result.content).not.toMatch(/id: 'wpn_claym_0019'[^\n]*source: 'preview'/)
+    // 其余字段一字不动
+    expect(result.content).toContain(
+      "id: 'wpn_claym_0018', name: '玉中身', rarity: 6, type: '双手剑', primaryStat: 'gat_passive_attr_wisd', elementalDamage: 'gat_passive_attr_icedam', specialAbility: 'gst_passive_keyword', chars: ['祀'] },",
+    )
+    // 上游还没收录的条目保留前瞻状态
+    expect(result.content).toMatch(/id: 'wpn_sword_0025'[^\n]*chars: \['明河'\], source: 'preview' \},/)
+  })
+
+  it('is idempotent and ignores released ids that are not in the file', () => {
+    const first = migrateForesightWeaponsFile(migratedTs(), stillForesight, ['wpn_claym_0018', 'wpn_claym_0099'])
+    const second = migrateForesightWeaponsFile(first.content, stillForesight, ['wpn_claym_0018', 'wpn_claym_0099'])
+    expect(second.demoted).toEqual([])
+    expect(second.content).toBe(first.content)
+  })
+
+  it('leaves a file without preview-marked released entries untouched', () => {
+    const result = migrateForesightWeaponsFile(WEAPONS_TS, [], ['wpn_sword_0023'])
+    expect(result.demoted).toEqual([])
+    expect(result.content).toBe(WEAPONS_TS)
+  })
+})

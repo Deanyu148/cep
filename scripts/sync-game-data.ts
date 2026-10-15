@@ -9,7 +9,7 @@ import { generateStatI18n } from './lib/generate-stat-i18n'
 import { generateCharacterI18n } from './lib/generate-characters'
 import { generateWikiData } from './lib/generate-wiki-data'
 import { loadGachaPoolData } from './lib/gacha-pools'
-import { describeForesightData, generateForesightData } from './lib/generate-foresight'
+import { describeForesightData, generateForesightData, readReleasedWeaponIds } from './lib/generate-foresight'
 import { migrateForesightWeapons } from './lib/migrate-foresight-weapons'
 import { updateBannerFile } from './lib/update-banner-file'
 import { exportGameI18nTables } from './lib/export-game-i18n'
@@ -17,7 +17,7 @@ import { compareWeapons } from './lib/compare-weapons'
 import { compareEquips } from './lib/compare-equips'
 import { compareDungeons } from './lib/compare-dungeons'
 import { updateWeaponsFile, updateEquipsFile, updateDungeonsFile, reconcileWeaponsIconIds } from './lib/update-data-files'
-import { validateAllData, validateCharacterAvatarMappings, validateImages } from './lib/validate-data'
+import { validateAllData, validateCharacterAvatarMappings, validateImages, partitionValidationIssues } from './lib/validate-data'
 import { convertWikiAssets } from './lib/convert-icons'
 import { downloadCharacterAvatars, probeSklandPreviewDrift } from './lib/download-character-avatars'
 import type { WikiAssets } from './lib/wiki-assets'
@@ -137,7 +137,8 @@ async function main() {
       // A matching upstream SHA is not sufficient: project data can still be
       // stale or manually corrupted. Validate both data and generated images
       // before taking the fast path.
-      const dataIssues = validateAllData(paths.akedata, projectRoot)
+      const dataValidation = partitionValidationIssues(validateAllData(paths.akedata, projectRoot))
+      const dataIssues = dataValidation.blocking
       const iconIssues = reconcileWeaponsIconIds(
         join(projectRoot, 'src', 'data', 'weapons.ts'),
         paths.akedata,
@@ -155,6 +156,13 @@ async function main() {
         console.warn(`\n  Skland probe skipped (treated as no change): ${drift.probeError}`)
       }
       const driftCount = (drift?.unscraped.length ?? 0) + (drift?.changedAvatars.length ?? 0)
+      if (dataValidation.advisory.length > 0) {
+        // 上游自己缺数据 (如新武器尚无获取途径) 不判定为"需要重新同步", 但仍然要看得见。
+        console.warn(`\n  Advisory (${dataValidation.advisory.length}, 上游自身缺数据, 不计入变更):`)
+        for (const issue of dataValidation.advisory) {
+          console.warn(`    [${issue.category}] ${issue.id}.${issue.field}: expected "${issue.expected}", got "${issue.actual}"`)
+        }
+      }
       if (
         dataIssues.length === 0 &&
         iconIssues.length === 0 &&
@@ -230,9 +238,18 @@ async function main() {
       gemTagIds: weapon.gemTagIds,
       iconId: weapon.iconId,
     }))
-  const foresightMigration = migrateForesightWeapons(join(projectRoot, 'src', 'data', 'weapons.ts'), foresightTargets, mode === 'update')
+  const foresightMigration = migrateForesightWeapons(
+    join(projectRoot, 'src', 'data', 'weapons.ts'),
+    foresightTargets,
+    // 上游 WeaponBasicTable 已收录 = 已实装: 把这些条目上的前瞻状态摘掉
+    readReleasedWeaponIds(paths.akedata),
+    mode === 'update',
+  )
   for (const entry of foresightMigration.migrated) {
     console.log(`  迁移到正式 id: ${entry.previewId} -> ${entry.formalId} (保留 source: 'preview')`)
+  }
+  if (foresightMigration.demoted.length > 0) {
+    console.log(`  已实装, 摘掉前瞻状态: ${foresightMigration.demoted.join(', ')}`)
   }
   if (foresightMigration.already.length > 0) console.log(`  已是正式 id: ${foresightMigration.already.join(', ')}`)
   if (foresightMigration.repaired.length > 0) console.log(`  补上前瞻状态 source: 'preview': ${foresightMigration.repaired.join(', ')}`)
@@ -287,6 +304,10 @@ async function main() {
     console.log(
       `  Reconciled weapons: ${weaponSync.added} added, ${weaponSync.updated} updated, ${weaponSync.unchanged} unchanged`,
     )
+    if (weaponSync.excluded.length > 0) {
+      // 剧情/预留变体: 上游条目存在但没有任何获取途径, 站点不收录 (见 updateWeaponsFile)
+      console.log(`  跳过（上游无获取途径, 不收录）: ${weaponSync.excluded.join(', ')}`)
+    }
     const iconIdFix = reconcileWeaponsIconIds(weaponsTsPath, paths.akedata, false)
     if (iconIdFix.added > 0 || iconIdFix.updated > 0) {
       console.log(`  iconId reconciled: ${iconIdFix.added} added, ${iconIdFix.updated} updated, ${iconIdFix.unchanged} unchanged`)
@@ -410,10 +431,16 @@ async function main() {
 
   // Validate existing data against upstream
   console.log('\n-- Validation --')
-  const validationIssues = validateAllData(paths.akedata, projectRoot)
-  if (validationIssues.length > 0) {
-    console.error(`  Found ${validationIssues.length} data inconsistency:`)
-    for (const issue of validationIssues) {
+  const { blocking: blockingIssues, advisory: advisoryIssues } = partitionValidationIssues(validateAllData(paths.akedata, projectRoot))
+  if (advisoryIssues.length > 0) {
+    console.warn(`  Advisory (${advisoryIssues.length}) — 上游自身缺数据, 不阻断同步:`)
+    for (const issue of advisoryIssues) {
+      console.warn(`    [${issue.category}] ${issue.id}.${issue.field}: expected "${issue.expected}", got "${issue.actual}"`)
+    }
+  }
+  if (blockingIssues.length > 0) {
+    console.error(`  Found ${blockingIssues.length} data inconsistency:`)
+    for (const issue of blockingIssues) {
       console.error(`  [${issue.category}] ${issue.id}.${issue.field}: expected "${issue.expected}", got "${issue.actual}"`)
     }
     console.error('\n  Data reconciliation incomplete. Refusing to mark this sync as successful.')

@@ -8,6 +8,8 @@
 //   - 已上线: updatePreviewWeapons 迁移 id 并**移除** source: 'preview', 随后 updateWeaponsFile
 //     补齐等级/突破/技能等上游字段。
 //   - 仍前瞻: 这里迁移 id 并**保留** source, 其余字段等实装后由 updateWeaponsFile 接管。
+//   - 已迁过正式 id 但本次上游已收录 (`WeaponBasicTable`): 条目不会再走 `preview:名称`
+//     分支, 所以由这里的 `releasedIds` 负责**摘掉** source: 'preview' (否则前瞻徽标永不消失)。
 //
 // 迁移前会逐字段核查人工条目与上游是否一致 (名称 / 稀有度 / 武器类型 / 三个宝石标签);
 // 任何一项对不上就不迁移, 只报告 —— 上游是唯一真源, 对不上说明人工条目写错了或匹配错了。
@@ -37,6 +39,8 @@ export interface ForesightMigrationResult {
   already: string[]
   /** 原本没标前瞻状态、已补上 `source: 'preview'` 的条目 */
   repaired: string[]
+  /** 上游已收录 (已实装)、本次摘掉 `source: 'preview'` 的条目 */
+  demoted: string[]
   /** 需要人工处理: 找不到条目 / id 冲突 / 字段对不上 */
   skipped: string[]
 }
@@ -57,6 +61,16 @@ function ensurePreviewSource(line: string): string {
   const index = line.lastIndexOf(' }')
   if (index < 0) return line
   return `${line.slice(0, index)}, source: 'preview'${line.slice(index)}`
+}
+
+/**
+ * 摘掉条目上的前瞻状态 (上游已收录 = 已实装)。条目字段顺序由同步维护, 所以只需处理
+ * 两种形态: 行尾的 `, source: 'preview' }` 与行中的 `source: 'preview', `。
+ */
+function removePreviewSource(line: string): string {
+  return line
+    .replace(/,\s*source:\s*'preview'(?=\s*\},?\s*$)/, '')
+    .replace(/source:\s*'preview',\s*/, '')
 }
 
 /**
@@ -111,13 +125,20 @@ function verifyEntry(line: string, target: ForesightWeaponTarget): string[] {
 }
 
 /**
- * 把 `content` 里的前瞻条目迁到正式 id。纯函数 (不碰文件系统), 便于 fixture 测试。
+ * 把 `content` 里的前瞻条目迁到正式 id, 并维护 `source: 'preview'` 前瞻状态。
+ * `releasedIds` = 本次上游 `WeaponBasicTable` 收录的 id (已实装): 这些条目上的前瞻状态会被摘掉。
+ * 纯函数 (不碰文件系统), 便于 fixture 测试。
  */
-export function migrateForesightWeaponsFile(content: string, targets: ForesightWeaponTarget[]): ForesightMigrationResult {
+export function migrateForesightWeaponsFile(
+  content: string,
+  targets: ForesightWeaponTarget[],
+  releasedIds: readonly string[] = [],
+): ForesightMigrationResult {
   const lines = content.split('\n')
   const migrated: Array<{ previewId: string; formalId: string }> = []
   const already: string[] = []
   const repairedIds: string[] = []
+  const demotedIds: string[] = []
   const skipped: string[] = []
   // 迁移护栏: 不覆盖已存在的正式 id, 也不让两个前瞻条目撞到同一个 id
   const existingFormalIds = new Set(lines.map(lineId).filter((id): id is string => id !== null && id.startsWith('wpn_')))
@@ -174,20 +195,46 @@ export function migrateForesightWeaponsFile(content: string, targets: ForesightW
     migrated.push({ previewId: target.previewId, formalId: target.formalId })
   }
 
-  return { content: lines.join('\n'), migrated, already, repaired: repairedIds, skipped }
+  // 上游已收录 (已实装) = 不再是前瞻。targets 只含仍在前瞻表里的条目, 所以这一组跟上面的
+  // migrated/repaired 不会重叠 —— 它们按 id 各管一行。
+  for (const releasedId of releasedIds) {
+    const index = lines.findIndex((line) => lineId(line) === releasedId)
+    if (index < 0) continue
+    const demoted = removePreviewSource(lines[index])
+    if (demoted === lines[index]) continue
+    lines[index] = demoted
+    demotedIds.push(releasedId)
+  }
+
+  return { content: lines.join('\n'), migrated, already, repaired: repairedIds, demoted: demotedIds, skipped }
 }
 
 /** 读取 `src/data/weapons.ts`, 迁移 (updateMode) 或只报告。 */
 export function migrateForesightWeapons(
   weaponsTsPath: string,
   targets: ForesightWeaponTarget[],
+  releasedIds: readonly string[],
   updateMode: boolean,
-): { migrated: ForesightMigrationResult['migrated']; already: string[]; repaired: string[]; skipped: string[] } {
-  if (!existsSync(weaponsTsPath)) return { migrated: [], already: [], repaired: [], skipped: ['weapons.ts 不存在'] }
+): {
+  migrated: ForesightMigrationResult['migrated']
+  already: string[]
+  repaired: string[]
+  demoted: string[]
+  skipped: string[]
+} {
+  if (!existsSync(weaponsTsPath)) {
+    return { migrated: [], already: [], repaired: [], demoted: [], skipped: ['weapons.ts 不存在'] }
+  }
   const content = readFileSync(weaponsTsPath, 'utf-8')
-  const result = migrateForesightWeaponsFile(content, targets)
-  if (updateMode && (result.migrated.length > 0 || result.repaired.length > 0)) {
+  const result = migrateForesightWeaponsFile(content, targets, releasedIds)
+  if (updateMode && (result.migrated.length > 0 || result.repaired.length > 0 || result.demoted.length > 0)) {
     writeFileSync(weaponsTsPath, result.content, 'utf-8')
   }
-  return { migrated: result.migrated, already: result.already, repaired: result.repaired, skipped: result.skipped }
+  return {
+    migrated: result.migrated,
+    already: result.already,
+    repaired: result.repaired,
+    demoted: result.demoted,
+    skipped: result.skipped,
+  }
 }

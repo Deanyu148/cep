@@ -53,7 +53,7 @@ function createWeaponUpstream(root: string): void {
     },
   }))
   writeFileSync(join(tableDir, 'ItemTable.json'), JSON.stringify({
-    wpn_claym_test: { name: { id: 100 }, iconId: 'wpn_claym_test' },
+    wpn_claym_test: { name: { id: 100 }, iconId: 'wpn_claym_test', obtainWayIds: ['item_obtain_activity'] },
   }))
   writeFileSync(join(tableDir, 'I18nTextTable_CN.json'), JSON.stringify({
     100: '三星测试',
@@ -81,6 +81,7 @@ it('adds a three-star weapon with no additional attribute and a retained skill a
     added: 1,
     updated: 0,
     unchanged: 0,
+    excluded: [],
   })
 
   const output = readFileSync(weaponsPath, 'utf8')
@@ -109,6 +110,7 @@ it('automatically reconciles incorrect existing weapon slots without losing reco
     added: 0,
     updated: 1,
     unchanged: 0,
+    excluded: [],
   })
 
   const output = readFileSync(weaponsPath, 'utf8')
@@ -116,4 +118,32 @@ it('automatically reconciles incorrect existing weapon slots without losing reco
   expect(output).toContain("specialAbility: 'gst_passive_force'")
   expect(output).not.toContain(',,')
   expect(output).toContain("chars: ['测试干员']")
+})
+
+it('skips upstream weapons without any acquisition path', () => {
+  const root = mkdtempSync(join(tmpdir(), 'cep-update-weapons-excluded-'))
+  roots.push(root)
+  createWeaponUpstream(root)
+  // 剧情/预留变体: 只有全区通用的武库交易所标记 (被同步视为噪声), 没有真实获取途径
+  writeFileSync(join(root, 'TableCfg', 'ItemTable.json'), JSON.stringify({
+    wpn_claym_test: { name: { id: 100 }, iconId: 'wpn_claym_test', obtainWayIds: ['item_obtain_payshop_weapon'] },
+  }))
+
+  const weaponsPath = join(root, 'weapons.ts')
+  const before = [
+    "import type { Weapon } from '@/types/matrix'",
+    'export const weapons: Weapon[] = [',
+    '  // ===== 三星（无附加属性；null 表示该槽位不限制） =====',
+    ']',
+    '',
+  ].join('\n')
+  writeFileSync(weaponsPath, before)
+
+  expect(updateWeaponsFile(weaponsPath, root)).toEqual({
+    added: 0,
+    updated: 0,
+    unchanged: 0,
+    excluded: ['wpn_claym_test'],
+  })
+  expect(readFileSync(weaponsPath, 'utf8')).toBe(before)
 })

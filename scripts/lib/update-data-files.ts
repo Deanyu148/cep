@@ -195,6 +195,11 @@ export interface WeaponDataReconcileResult {
   added: number
   updated: number
   unchanged: number
+  /**
+   * 上游有条目、但一条获取途径都没有 (剧情/预留变体) 而未收录的武器。
+   * 站点只收录常规武器: 无途径的条目在规划器/维基里都没有可展示的内容。
+   */
+  excluded: string[]
 }
 
 /**
@@ -311,10 +316,17 @@ export function updateWeaponsFile(
   }
 
   const newWeapons: Array<{ rarity: number; line: string }> = []
+  const excluded: string[] = []
   for (const weaponId of upstreamWeaponIds) {
     if (existingIds.has(weaponId)) continue
     const upstream = resolved.get(weaponId)
     if (!upstream || upstream.entry.rarity < 3) continue
+    // 上游没有任何获取途径 = 剧情/预留变体, 不是常规可获取武器: 不新增条目。
+    // 只拦新增 —— 已在 weapons.ts 里的条目照常同步字段 (移除条目会连带丢掉人工维护的 chars)。
+    if (upstream.acquisitionSources.length === 0) {
+      excluded.push(weaponId)
+      continue
+    }
 
     const iconId = resolveWeaponIconId(itemTable, weaponId) ?? weaponId
     newWeapons.push({
@@ -343,7 +355,7 @@ export function updateWeaponsFile(
   }
 
   if (updatedContent !== content) writeFileSync(weaponsTsPath, updatedContent, 'utf-8')
-  return { added: newWeapons.length, updated, unchanged }
+  return { added: newWeapons.length, updated, unchanged, excluded: excluded.sort() }
 }
 
 

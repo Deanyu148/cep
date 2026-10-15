@@ -1,5 +1,8 @@
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs'
+import { tmpdir } from 'node:os'
+import { join } from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { aggregateStageMaterials, buildForesightData, type ForesightSources } from './generate-foresight'
+import { aggregateStageMaterials, buildForesightData, readReleasedWeaponIds, type ForesightSources } from './generate-foresight'
 
 const EMPTY_TEXTS = { 'zh-CN': {}, en: {}, ja: {}, 'zh-TW': {} }
 
@@ -143,5 +146,23 @@ describe('buildForesightData', () => {
       ['item_plant_spcstone_1_1', 10],
       ['item_plant_spcstone_1_2', 5],
     ])
+  })
+})
+
+describe('readReleasedWeaponIds', () => {
+  it('returns the sorted WeaponBasicTable ids and survives a missing table', () => {
+    const root = mkdtempSync(join(tmpdir(), 'cep-foresight-released-'))
+    mkdirSync(join(root, 'TableCfg'), { recursive: true })
+    writeFileSync(
+      join(root, 'TableCfg', 'WeaponBasicTable.json'),
+      JSON.stringify({ wpn_sword_0024: { rarity: 6 }, wpn_claym_0018: { rarity: 6 } }),
+    )
+    try {
+      // 已上线集合是前瞻集合的补集: 同步靠它把已实装条目的前瞻状态摘掉
+      expect(readReleasedWeaponIds(root)).toEqual(['wpn_claym_0018', 'wpn_sword_0024'])
+      expect(readReleasedWeaponIds(join(root, '不存在'))).toEqual([])
+    } finally {
+      rmSync(root, { recursive: true, force: true })
+    }
   })
 })

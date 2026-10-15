@@ -4,6 +4,10 @@
 // 名字进 `src/generated/i18n/weapons/*` (与已上线武器同一份产物), 图标进 wiki assets,
 // 因此这里只做: 判定 + 与前台条目匹配 + 把正式 id 交给迁移 (migrate-foresight-weapons.ts)。
 //
+// 前瞻 <-> 已实装的切换只由 `WeaponBasicTable` 决定 (单向: 一旦收录就不再是前瞻):
+//   - 不在表里   -> 标记 `source: 'preview'` (migrate-foresight-weapons.ts)
+//   - 进了表里   -> 摘掉标记, 设备/图标/翻译早在迁移时就已经是正式 id (readReleasedWeaponIds 提供这一集合)
+//
 // 判定与数据来源全部是客户端表:
 //   - WeaponBasicTable.json              已上线武器集合 (80 条) —— 不含 id 即前瞻
 //   - ForesightWeaponTable.json          前瞻/在售武器条目 (含 skIds / iconId / stageMaterials)
@@ -225,6 +229,15 @@ export function readForesightWeaponIconIds(akedataPath: string): string[] {
     .filter((id) => basic[id] === undefined)
     .map((id) => String(foresight[id]?.iconId ?? id))
     .sort()
+}
+
+/**
+ * 上游 `WeaponBasicTable` 的武器 id (= 已上线集合)。前瞻判定就是它的补集, 同步流程用它
+ * 把已实装条目上的前瞻状态摘掉。表缺失时返回空数组 (宁可不摘, 不可错摘)。
+ */
+export function readReleasedWeaponIds(akedataPath: string): string[] {
+  const basic = readTableOptional<Record<string, unknown>>(akedataPath, 'WeaponBasicTable')
+  return basic ? Object.keys(basic).sort() : []
 }
 
 /** 读取上游表并组装前瞻武器数据 (纯返回, 不写文件)。 */

@@ -15,7 +15,7 @@ import { WEAPON_TYPE_MAP } from './compare-weapons'
 import { buildAttrShowConfigs, resolveFormat, formatEquipStat } from './equip-stat-format'
 import { resolveWeaponStats } from './weapon-stats'
 import type { WeaponSkillPatchEntry } from './weapon-stats'
-import { buildWeaponAcquisitionData } from './weapon-acquisition'
+import { buildWeaponAcquisitionData, sourcelessWeaponWarning } from './weapon-acquisition'
 import type { WikiAssets } from './wiki-assets'
 import { createCharacterAvatarResolver } from '../../src/lib/character-avatar-resolve'
 import { wikiTextKey } from '../../src/lib/wiki-i18n'
@@ -28,6 +28,43 @@ export interface ValidationIssue {
   field: string
   expected: string
   actual: string
+  /**
+   * `warning` = 只报告不阻断。用于上游自己就缺数据的情况 (如新武器还没有任何获取途径):
+   * 项目本来就不可能拿到数据, 把它当"不一致"会让同步永远无法成功。
+   * 缺省 (undefined) = 阻断性错误。
+   */
+  severity?: 'warning'
+}
+
+/**
+ * 按 `severity` 把校验结果分成阻断性错误与参考信息。`check` 的闸门与 `update` 的
+ * 退出码只看 blocking —— 否则一条上游自带的 warning 会让闸门每次都报"有变更"。
+ */
+export function partitionValidationIssues(
+  issues: readonly ValidationIssue[],
+): { blocking: ValidationIssue[]; advisory: ValidationIssue[] } {
+  const blocking: ValidationIssue[] = []
+  const advisory: ValidationIssue[] = []
+  for (const issue of issues) {
+    if (issue.severity === 'warning') advisory.push(issue)
+    else blocking.push(issue)
+  }
+  return { blocking, advisory }
+}
+
+/**
+ * `source: 'preview'` 标记的条目 id (前瞻/未上线)。条目一行一条, 与
+ * `migrate-foresight-weapons.ts` 的 `lineId` 约定一致: 只认行首或 `,` 后的 id 字段,
+ * 避免误命中 `previewId: 'preview:xx'` 这类包含 `id:` 子串的字段。
+ */
+function collectPreviewWeaponIds(content: string): Set<string> {
+  const ids = new Set<string>()
+  for (const line of content.split('\n')) {
+    if (!/source:\s*'preview'/.test(line)) continue
+    const id = /(?:^|[{,]) *id: *'([^']+)'/.exec(line)?.[1]
+    if (id) ids.add(id)
+  }
+  return ids
 }
 
 // ── Validate weapons ──────────────────────────────────────────────────────
@@ -36,6 +73,7 @@ export interface ValidationIssue {
 export function validateWeapons(
   akedataPath: string,
   projectWeaponsTsPath: string,
+  excludedWeaponIds: ReadonlySet<string> = new Set(),
 ): ValidationIssue[] {
   const issues: ValidationIssue[] = []
 
@@ -49,6 +87,10 @@ export function validateWeapons(
     }]
   }
   const projectContent = readFileSync(projectWeaponsTsPath, 'utf-8')
+  // 前瞻条目 (source: 'preview') 用的是正式 id + 图标 + 翻译, 只是上游 `WeaponBasicTable`
+  // 还没收录它们 —— 所以不能当"项目多出来的脏数据"。历史上前瞻条目用 `preview:名称`
+  // 临时 id, 现在用正式 id, 两种形式都要放行。
+  const previewWeaponIds = collectPreviewWeaponIds(projectContent)
 
   const weaponRegex = /\{\s*id:\s*'([^']+)'(?:,\s*iconId:\s*'[^']*')?,\s*name:\s*'((?:\\.|[^'\\])*)',\s*rarity:\s*(\d+),\s*type:\s*'([^']*)',\s*primaryStat:\s*(?:'([^']*)'|(null)),\s*elementalDamage:\s*(?:'([^']*)'|(null)),\s*specialAbility:\s*(?:'([^']*)'|(null))/g
   const projectWeapons = new Map<string, { name: string; rarity: number; type: string; primaryStat: string | null; elementalDamage: string | null; specialAbility: string | null }>()
@@ -91,6 +133,8 @@ export function validateWeapons(
   for (const [weaponId, wpnData] of Object.entries(wpnBasic)) {
     const rarity = wpnData.rarity ?? 1
     if (rarity < 3) continue
+    // 上游无获取途径的武器 (剧情/预留变体) 站点不收录, 见 updateWeaponsFile 的新增过滤
+    if (excludedWeaponIds.has(weaponId)) continue
 
     const projectWeapon = projectWeapons.get(weaponId)
     if (!projectWeapon) {
@@ -169,6 +213,7 @@ export function validateWeapons(
 
   for (const weaponId of projectWeapons.keys()) {
     if (weaponId.startsWith('preview:')) continue
+    if (previewWeaponIds.has(weaponId)) continue
     const upstream = wpnBasic[weaponId]
     if (!upstream || (upstream.rarity ?? 1) < 3) {
       issues.push({
@@ -204,7 +249,6 @@ function parseProjectWeaponAcquisitionSources(projectContent: string): Map<strin
 export function validateWeaponAcquisition(
   akedataPath: string,
   projectWeaponsTsPath: string,
-  previewWeaponIds: ReadonlySet<string> = new Set(),
   projectRoot?: string,
 ): ValidationIssue[] {
   if (!existsSync(projectWeaponsTsPath)) return []
@@ -212,9 +256,17 @@ export function validateWeaponAcquisition(
   const projectSources = parseProjectWeaponAcquisitionSources(projectContent)
   const upstream = buildWeaponAcquisitionData(akedataPath)
   const issues: ValidationIssue[] = []
-  for (const warning of upstream.warnings) issues.push({ category: 'weapon', id: warning, field: 'acquisitionSource', expected: 'valid source mapping', actual: warning })
+  // 上游一条获取途径都没有的武器 (剧情/预留变体): 站点不收录它们 (updateWeaponsFile /
+  // generate-wiki-data.ts 都会跳过), 所以既不能要求 weapons.ts 里有记录, 也不能把
+  // "来源为空"当成分歧 —— 只报一条参考信息。它们对应的 warning 字符串也要滤掉。
+  const excludedWeaponIds = new Set(upstream.sourcelessWeaponIds)
+  const excludedWarnings = new Set(upstream.sourcelessWeaponIds.map(sourcelessWeaponWarning))
+  for (const warning of upstream.warnings) {
+    if (excludedWarnings.has(warning)) continue
+    issues.push({ category: 'weapon', id: warning, field: 'acquisitionSource', expected: 'valid source mapping', actual: warning })
+  }
   for (const [weaponId, expectedSources] of Object.entries(upstream.sourcesByWeapon)) {
-    if (previewWeaponIds.has(weaponId)) continue
+    if (excludedWeaponIds.has(weaponId)) continue
     const actualSources = projectSources.get(weaponId)
     if (!actualSources) {
       issues.push({ category: 'weapon', id: weaponId, field: 'acquisitionSources', expected: JSON.stringify(expectedSources), actual: '<missing>' })
@@ -224,9 +276,14 @@ export function validateWeaponAcquisition(
     const actual = JSON.stringify(actualSources)
     if (expected !== actual) issues.push({ category: 'weapon', id: weaponId, field: 'acquisitionSources', expected, actual })
   }
-  for (const [weaponId, sources] of Object.entries(upstream.sourcesByWeapon)) {
-    if (previewWeaponIds.has(weaponId) || sources.length > 0) continue
-    issues.push({ category: 'weapon', id: weaponId, field: 'acquisitionSources', expected: 'at least one source', actual: '<empty>' })
+  // 上游无获取途径的武器 (剧情/预留变体): 站点不收录, 只报一条参考信息。
+  // 已在站内列表里的条目不会被自动摘除 (会连带丢掉人工维护的 chars), 所以单独提示。
+  for (const weaponId of upstream.sourcelessWeaponIds) {
+    if (projectSources.has(weaponId)) {
+      issues.push({ category: 'weapon', id: weaponId, field: 'acquisitionSources', expected: 'at least one source', actual: '<empty>', severity: 'warning' })
+      continue
+    }
+    issues.push({ category: 'weapon', id: weaponId, field: 'record', expected: 'site-eligible upstream weapon', actual: 'upstream has no acquisition path — not listed on the site', severity: 'warning' })
   }
   if (projectRoot) issues.push(...validateGeneratedWeaponAcquisitionI18n(projectRoot, upstream))
   return issues
@@ -562,9 +619,12 @@ export function validateAllData(
   akedataPath: string,
   projectRoot: string,
 ): ValidationIssue[] {
+  // 上游无获取途径的武器 (剧情/预留变体) 站点不收录 (updateWeaponsFile / generate-wiki-data.ts),
+  // 所以 "weapons.ts 里必须有记录" 这类检查要把它们排除掉。只扫一次获取途径数据。
+  const excludedWeaponIds = new Set(buildWeaponAcquisitionData(akedataPath).sourcelessWeaponIds)
   const issues: ValidationIssue[] = [
-    ...validateWeapons(akedataPath, join(projectRoot, 'src', 'data', 'weapons.ts')),
-    ...validateWeaponAcquisition(akedataPath, join(projectRoot, 'src', 'data', 'weapons.ts'), new Set(), projectRoot),
+    ...validateWeapons(akedataPath, join(projectRoot, 'src', 'data', 'weapons.ts'), excludedWeaponIds),
+    ...validateWeaponAcquisition(akedataPath, join(projectRoot, 'src', 'data', 'weapons.ts'), projectRoot),
     ...validateEquips(akedataPath, join(projectRoot, 'src', 'data', 'equips.ts')),
     ...validateDungeons(akedataPath, join(projectRoot, 'src', 'data', 'dungeons.ts')),
   ]

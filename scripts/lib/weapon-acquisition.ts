@@ -18,7 +18,21 @@ export interface WeaponAcquisitionData {
   sourcesByWeapon: WeaponAcquisitionSourceMap
   categories: Record<string, LocalizedText>
   details: Record<string, WeaponAcquisitionI18nEntry>
+  /**
+   * 上游这一版客户端里一条获取途径都没有的武器 (剧情/预留变体)。站点**不收录**它们
+   * (见 `updateWeaponsFile` 的新增过滤 + `generate-wiki-data.ts`), 也不该要求
+   * `weapons.ts` 里有记录 —— 所以校验只能把它们当参考信息报出来。
+   */
+  sourcelessWeaponIds: string[]
   warnings: string[]
+}
+
+/**
+ * "上游没有任何获取途径"的警告文案。导出给校验层用, 避免在校验里再拼一遍字符串
+ * (拼错就等于把上游缺数据误判成映射错误)。
+ */
+export function sourcelessWeaponWarning(weaponId: string): string {
+  return `Weapon has no acquisition source: ${weaponId}`
 }
 
 interface ItemRecord {
@@ -331,19 +345,24 @@ export function buildWeaponAcquisitionData(akedataPath: string): WeaponAcquisiti
   }
 
   const sourcesByWeapon: WeaponAcquisitionSourceMap = {}
+  const sourcelessWeaponIds: string[] = []
   for (const weaponId of weaponIds) {
     const sources = [...(sourceSets.get(weaponId) ?? [])].map((key) => {
       const separator = key.indexOf('\u0000')
       return { categoryId: key.slice(0, separator), sourceId: key.slice(separator + 1) }
     })
     sourcesByWeapon[weaponId] = sources
-    if (sources.length === 0) warnings.push(`Weapon has no acquisition source: ${weaponId}`)
+    if (sources.length === 0) {
+      sourcelessWeaponIds.push(weaponId)
+      warnings.push(sourcelessWeaponWarning(weaponId))
+    }
   }
 
   return {
     sourcesByWeapon,
     categories,
     details: Object.fromEntries(details),
+    sourcelessWeaponIds: sourcelessWeaponIds.sort(),
     warnings: [...new Set(warnings)],
   }
 }

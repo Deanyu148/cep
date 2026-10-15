@@ -428,6 +428,56 @@ function writeEquipmentNameFiles(
   })
 }
 
+/**
+ * 上游一条获取途径都没有的武器 (剧情/预留变体) 站点不收录 —— 与 `weapons.ts` 的新增过滤
+ * (`updateWeaponsFile`) 保持一致, 否则维基里会多出一个没有获取途径的同名页面。
+ */
+export function excludeSourcelessWeapons(
+  items: ItemWikiData,
+  sourcelessWeaponIds: ReadonlySet<string>,
+): ItemWikiData {
+  if (sourcelessWeaponIds.size === 0) return items
+  return {
+    ...items,
+    weaponSummaries: items.weaponSummaries.filter((summary) => !sourcelessWeaponIds.has(summary.id)),
+    weaponDetails: Object.fromEntries(
+      Object.entries(items.weaponDetails).filter(([weaponId]) => !sourcelessWeaponIds.has(weaponId)),
+    ),
+  }
+}
+
+/**
+ * 维基不收录的武器 = 上游**没有获取途径**、且站点列表 (`weapons.ts`) 里也没有的条目。
+ *
+ * 为什么必须减去站点列表: 上游把某个已收录武器标成无途径（例如刚实装的前瞻武器还在等途径配置）时，
+ * 规划器里有它、维基里却没它，比“来源未知”更糟。前瞻武器不在 `WeaponBasicTable` 里，
+ * 根本不在 sourceless 集合里，所以不受影响。
+ */
+export function selectUnlistedWeaponIds(
+  sourcelessWeaponIds: readonly string[],
+  listedWeaponIds: ReadonlySet<string>,
+): Set<string> {
+  return new Set(sourcelessWeaponIds.filter((weaponId) => !listedWeaponIds.has(weaponId)))
+}
+
+/**
+ * 从维基数据里剔掉这些武器 (与 `weapons.ts` 的收录过滤保持一致)。
+ * 入参为空时原样返回, 避免同步热路径上多复制两个对象。
+ */
+export function excludeWikiWeapons(
+  items: ItemWikiData,
+  weaponIds: ReadonlySet<string>,
+): ItemWikiData {
+  if (weaponIds.size === 0) return items
+  return {
+    ...items,
+    weaponSummaries: items.weaponSummaries.filter((summary) => !weaponIds.has(summary.id)),
+    weaponDetails: Object.fromEntries(
+      Object.entries(items.weaponDetails).filter(([weaponId]) => !weaponIds.has(weaponId)),
+    ),
+  }
+}
+
 export interface WikiDataResult {
   categories: string[]
   files: string[]
@@ -458,8 +508,14 @@ export function generateWikiData(
     equipStatFormats: buildAttrShowConfigs(akedataPath),
     textTables,
   }
-  const generated = buildItemWikiData(source)
   const acquisition = buildWeaponAcquisitionData(akedataPath)
+  const generated = excludeWikiWeapons(
+    buildItemWikiData(source),
+    selectUnlistedWeaponIds(
+      acquisition.sourcelessWeaponIds,
+      readWeaponIdsFromDisk(resolve(dataOutputDir, '..', '..', '..')),
+    ),
+  )
   for (const summary of generated.weaponSummaries) {
     summary.acquisitionSources = acquisition.sourcesByWeapon[summary.id] ?? []
   }

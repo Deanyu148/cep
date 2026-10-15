@@ -73,6 +73,7 @@ it('normalizes direct, pool, shop, and chest sources without localized fields', 
   expect(result.sourcesByWeapon.wpn_test.every((source) => Object.keys(source).sort().join(',') === 'categoryId,sourceId')).toBe(true)
   expect(result.details['gacha\u0000pool_test']?.name['zh-CN']).toBe('常驻武器池')
   expect(result.details['shop\u0000goods_test']?.name['zh-CN']).toBe('日常武器商店')
+  expect(result.sourcelessWeaponIds).toEqual([])
 })
 
 it('resolves concrete shop names through their owning records', () => {
@@ -165,6 +166,7 @@ it('keeps an empty source list for a weapon with no discoverable acquisition rec
   const result = buildWeaponAcquisitionData(root)
   expect(result.sourcesByWeapon.wpn_test).toEqual([])
   expect(result.warnings).toContain('Weapon has no acquisition source: wpn_test')
+  expect(result.sourcelessWeaponIds).toEqual(['wpn_test'])
 })
 
 it('warns when a referenced source has no display name', () => {

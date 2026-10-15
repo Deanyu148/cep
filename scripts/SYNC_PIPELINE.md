@@ -154,6 +154,19 @@ SHA 追踪信息存储在主仓库文件 `scripts/.cache/upstream-versions.json`
 2. AKEDatabase HEAD SHA == 同上
 3. 本地一致性：`validateAllData`（武器/装备/淤积点 + 来源关系）、武器 iconId、`validateImages`、
    `validateCharacterAvatarMappings`（banner 引用的角色名是否都能解析出头像）
+
+   `validateAllData` 的条目分两类：`severity: 'warning'` 的是**上游自己缺数据**（如新武器在新客户端
+   里还没有任何获取途径），只打印不阻断；其余为 blocking，阻断 `check` 判定与 `update` 退出码。
+   两边分开的原因：上游自身缺数据不可能靠重新同步修好，当成不一致会让闸门永远报"有变更"。
+
+**收录规则（`weapons.ts` 与维基一致）**：上游 `WeaponBasicTable` 里**一条获取途径都没有**的武器
+（剧情/预留变体，例如 1.6 的 `wpn_sword_0021_ink`）站点不收录 —— `updateWeaponsFile` 不新增条目，
+日志打印 `跳过（上游无获取途径, 不收录）`；`generate-wiki-data.ts` 也从维基数据里剔掉它们
+（`selectUnlistedWeaponIds` + `excludeWikiWeapons`）。
+
+边界：**已经在 `weapons.ts` 里的条目一律保留**（无论上游有没有途径）—— 不自动移除条目（会丢掉人工
+维护的 `chars`），维基也不剔已在列表里的武器，只在校验里报 warning，保证"规划器里有、维基里没有"
+不会出现。前瞻武器不在 `WeaponBasicTable` 里，不参与这套规则（收录由前瞻流程负责）。
 4. Skland 目录探针（仅 `--check --skland-probe`，CI 的 check job 会带上）：对比线上干员目录与已提交的
    `preview-character-avatars.json` / `sources.json`，命中两类漂移即判定需要更新：
    出现未抓取的前瞻角色、前瞻头像 URL 变了

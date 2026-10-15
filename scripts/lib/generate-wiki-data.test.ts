@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { buildPlannerWikiPreviews, buildWikiGlossary, mergeAttributeMapLabels } from './generate-wiki-data'
+import { buildPlannerWikiPreviews, buildWikiGlossary, excludeWikiWeapons, mergeAttributeMapLabels, selectUnlistedWeaponIds } from './generate-wiki-data'
 import { wikiEquipmentPlannerPreviews } from '../../src/generated/data/wiki/planner-previews'
 import attributes from '../../src/generated/data/wiki/enums.json'
 import equipStatsEn from '../../src/generated/i18n/equipStats/en.json'
@@ -73,6 +73,28 @@ it('derives compact planner previews from Wiki detail data', () => {
     weapons: { wpn_test: { stats: [{ levelOne: { skillId: 'skill-test', level: 1 }, maxLevel: { skillId: 'skill-test', level: 9 }, levelOneLabel: 'Lv.1', maxLevelLabel: 'Lv.9' }] } },
     equipment: { equip_test: { stats: [{ attributeId: '39', levelOne: '1', maxLevel: '2', levelOneLabel: '+0', maxLevelLabel: '+1' }] } },
   })
+})
+
+it('drops upstream weapons without an acquisition path that the site does not list', () => {
+  const data = {
+    weaponSummaries: [{ id: 'wpn_keep' }, { id: 'wpn_story' }],
+    weaponDetails: { wpn_keep: { skills: [] }, wpn_story: { skills: [] } },
+    equipmentSummaries: [{ id: 'equip_keep' }],
+    equipmentDetails: { equip_keep: {} },
+  } as unknown as ItemWikiData
+
+  // 上游无途径 + 站点未收录 -> 剔掉; 已收录的同名条目保留 (规划器/维基必须一致)
+  const weaponIds = selectUnlistedWeaponIds(['wpn_story', 'wpn_listed'], new Set(['wpn_listed']))
+  expect([...weaponIds]).toEqual(['wpn_story'])
+
+  const filtered = excludeWikiWeapons(data, weaponIds)
+  expect(filtered.weaponSummaries.map((summary) => summary.id)).toEqual(['wpn_keep'])
+  expect(Object.keys(filtered.weaponDetails)).toEqual(['wpn_keep'])
+  // 装备维基数据不受影响
+  expect(filtered.equipmentSummaries).toBe(data.equipmentSummaries)
+  expect(filtered.equipmentDetails).toBe(data.equipmentDetails)
+  // 没有要排除的条目时原样返回 (同步热路径)
+  expect(excludeWikiWeapons(data, new Set())).toBe(data)
 })
 
 it('provides a localized label for every generated equipment preview stat', () => {

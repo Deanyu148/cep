@@ -3,7 +3,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { afterEach, expect, it } from 'vitest'
-import { validateCharacterAvatarMappings, validateEquips, validateWeapons } from './validate-data'
+import { validateCharacterAvatarMappings, validateEquips, validateWeaponAcquisition, validateWeapons, partitionValidationIssues } from './validate-data'
 import type { BannerNameSource } from './validate-data'
 
 const roots: string[] = []
@@ -187,6 +187,7 @@ it('detects the incorrect three-star slot mapping from upstream skill families',
     'export const weapons = [',
     "  { id: 'wpn_claym_test', name: '三星测试', rarity: 3, type: '双手剑', primaryStat: 'gat_passive_attr_main', elementalDamage: null, specialAbility: 'gst_passive_force', chars: [] },",
     "  { id: 'preview:测试预告', name: '测试预告', rarity: 6, type: '双手剑', primaryStat: 'gat_passive_attr_main', elementalDamage: 'gat_passive_attr_atk', specialAbility: 'gst_passive_force', chars: [], source: 'preview' },",
+    "  { id: 'wpn_sword_0025', name: '唤月', rarity: 6, type: '单手剑', primaryStat: 'gat_passive_attr_will', elementalDamage: 'gat_passive_attr_atk', specialAbility: 'gst_passive_magabn', chars: ['明河'], source: 'preview' },",
     "  { id: 'wpn_unknown', name: '未知正式武器', rarity: 6, type: '双手剑', primaryStat: 'gat_passive_attr_main', elementalDamage: 'gat_passive_attr_atk', specialAbility: 'gst_passive_force', chars: [] },",
     ']',
   ].join('\n'))
@@ -199,4 +200,94 @@ it('detects the incorrect three-star slot mapping from upstream skill families',
       actual: 'present',
     },
   ])
+})
+
+/**
+ * 获取途径校验的极简 fixture: 上游 WeaponBasicTable + ItemTable 的 obtainWayIds,
+ * 以及一份同 id 的项目文件 (校验会分别读上游目录和项目文件)。
+ */
+function acquisitionFixture(
+  upstreamObtainWays: Record<string, string[]>,
+  projectSources: Record<string, string>,
+): { root: string; projectPath: string } {
+  const root = mkdtempSync(join(tmpdir(), 'cep-validate-acquisition-'))
+  roots.push(root)
+  const tableDir = join(root, 'TableCfg')
+  mkdirSync(tableDir, { recursive: true })
+  const writeJson = (name: string, value: unknown) => writeFileSync(join(tableDir, `${name}.json`), JSON.stringify(value))
+
+  writeJson('I18nTextTable_CN', { 1: '活动' })
+  writeJson('WeaponBasicTable', Object.fromEntries(Object.keys(upstreamObtainWays).map((id) => [id, { rarity: 6 }])))
+  writeJson('ItemTable', Object.fromEntries(Object.entries(upstreamObtainWays).map(([id, ways]) => [id, { obtainWayIds: ways }])))
+  writeJson('SystemJumpTable', { item_obtain_activity: { desc: { id: 1 } } })
+
+  const projectPath = join(root, 'weapons.ts')
+  writeFileSync(projectPath, [
+    'export const weapons = [',
+    ...Object.entries(projectSources).map(([id, sources]) => `  { id: '${id}', iconId: '${id}', name: '测试武器', rarity: 6, type: '单手剑', primaryStat: 'gat_passive_attr_agi', elementalDamage: 'gat_passive_attr_atk', specialAbility: 'gst_passive_burst', acquisitionSources: ${sources}, chars: [] },`),
+    ']',
+  ].join('\n'))
+  return { root, projectPath }
+}
+
+it('reports an upstream weapon without any acquisition path as advisory', () => {
+  const { root, projectPath } = acquisitionFixture({ wpn_sourceless: [] }, { wpn_sourceless: '[]' })
+
+  const issues = validateWeaponAcquisition(root, projectPath)
+  expect(issues).toEqual([
+    {
+      category: 'weapon',
+      id: 'wpn_sourceless',
+      field: 'acquisitionSources',
+      expected: 'at least one source',
+      actual: '<empty>',
+      severity: 'warning',
+    },
+  ])
+  expect(partitionValidationIssues(issues)).toEqual({ blocking: [], advisory: issues })
+})
+
+it('still blocks when the project disagrees with a mapped upstream source', () => {
+  const { root, projectPath } = acquisitionFixture({ wpn_sourced: ['item_obtain_activity'] }, { wpn_sourced: '[]' })
+
+  const { blocking, advisory } = partitionValidationIssues(validateWeaponAcquisition(root, projectPath))
+  expect(advisory).toEqual([])
+  expect(blocking).toEqual([
+    {
+      category: 'weapon',
+      id: 'wpn_sourced',
+      field: 'acquisitionSources',
+      expected: '[{"categoryId":"activity","sourceId":"item_obtain_activity"}]',
+      actual: '[]',
+    },
+  ])
+})
+
+it('reports a site-excluded upstream weapon (no acquisition path) as advisory', () => {
+  const { root, projectPath } = acquisitionFixture({ wpn_story: [] }, {})
+
+  const issues = validateWeaponAcquisition(root, projectPath)
+  expect(issues).toEqual([
+    {
+      category: 'weapon',
+      id: 'wpn_story',
+      field: 'record',
+      expected: 'site-eligible upstream weapon',
+      actual: 'upstream has no acquisition path — not listed on the site',
+      severity: 'warning',
+    },
+  ])
+  expect(partitionValidationIssues(issues).blocking).toEqual([])
+})
+
+it('only requires a project record for upstream weapons that have an acquisition path', () => {
+  const { root, projectPath } = acquisitionFixture({ wpn_story: [] }, {})
+  const records = (excluded: ReadonlySet<string>) =>
+    validateWeapons(root, projectPath, excluded).filter((issue) => issue.field === 'record')
+
+  expect(records(new Set())).toEqual([
+    { category: 'weapon', id: 'wpn_story', field: 'record', expected: 'present', actual: '<missing>' },
+  ])
+  // 上游无获取途径 (剧情/预留变体) -> 站点不收录, 不要求 weapons.ts 里有记录
+  expect(records(new Set(['wpn_story']))).toEqual([])
 })
