@@ -41,6 +41,10 @@
 # 安装依赖
 pnpm install
 
+# 初始化子模块 (public/game-i18n = cmyyx/cep-assets, 游戏文案查询的导出数据)
+# 也可直接 `git clone --recurse-submodules`
+pnpm submodules:init
+
 # 启动开发服务器
 pnpm dev
 

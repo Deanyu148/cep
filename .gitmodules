@@ -1,0 +1,3 @@
+[submodule "public/game-i18n"]
+	path = public/game-i18n
+	url = https://github.com/cmyyx/cep-assets.git

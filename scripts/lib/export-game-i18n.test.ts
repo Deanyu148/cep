@@ -29,6 +29,29 @@ it('rejects unsafe maxChunkBytes values', () => {
   expect(assertSafeMaxChunkBytes(1024)).toBe(1024)
 })
 
+it('preserves the submodule .git entry when the export directory is swapped', () => {
+  const root = mkdtempSync(join(tmpdir(), 'cep-game-i18n-submodule-'))
+  const output = join(root, 'game-i18n')
+  const temp = join(root, 'temp')
+  mkdirSync(output, { recursive: true })
+  mkdirSync(temp, { recursive: true })
+  // 子模块工作区的 .git 是一个文件 (gitdir: ../.git/modules/...)
+  const gitdir = 'gitdir: ../../../.git/modules/public/game-i18n\n'
+  writeFileSync(join(output, '.git'), gitdir)
+  writeFileSync(join(output, 'old.json'), '{}')
+  writeFileSync(join(temp, 'new.json'), '{}')
+
+  try {
+    installExportDirectory(temp, output)
+    expect(existsSync(join(output, '.git'))).toBe(true)
+    expect(readFileSync(join(output, '.git'), 'utf8')).toBe(gitdir)
+    expect(existsSync(join(output, 'new.json'))).toBe(true)
+    expect(existsSync(join(output, 'old.json'))).toBe(false)
+  } finally {
+    rmSync(root, { recursive: true, force: true })
+  }
+})
+
 it('ignores successful-install cleanup failures', () => {
   const cleanupPaths: string[] = []
   const removeWithFileLock: typeof rmSync = (path) => {

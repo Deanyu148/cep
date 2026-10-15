@@ -11,6 +11,21 @@
 
 ## 环境准备
 
+### 子模块（`public/game-i18n`）
+
+`public/game-i18n` 是 [cmyyx/cep-assets](https://github.com/cmyyx/cep-assets) 的**子模块**：
+游戏文案导出（15 语言 × 8 MiB 分块）每次同步会全量重写，放在主仓会把历史反复撑大。
+
+- 首次 clone：`git clone --recurse-submodules …`；已有 clone：`pnpm submodules:init`
+- 路径与主仓内路径一致（`public/game-i18n`），所以 `next build`、`out/`、`/game-i18n/*` URL、
+  构建时的内容指纹清单（`src/generated/game-i18n-hash-manifest.ts`）都不需要改变
+- 同步时主仓只记录**子模块指针**；本地跑完 `sync:update` 后要在子仓里自行提交：
+  `git -C public/game-i18n add -A && git -C public/game-i18n commit -m "chore: sync game i18n export"`，
+  再在主仓提交指针变化。CI 由 `.github/workflows/sync-game-data.yml` 自动完成这两步
+  （子仓用 `GH_FORK_SYNC_TOKEN` push）
+- 子仓根另有 `README.md` / `.gitattributes`，它们在构建后由 `scripts/prune-export.mjs` 从 `out/` 里剔除，
+  不会作为站点资源发布
+
 ### 本地配置
 
 在项目根目录创建 `sync-game-data.config.json`（已 gitignore）：

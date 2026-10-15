@@ -427,6 +427,11 @@ async function main() {
       const maxBytes = Math.max(...meta.chunks.map((chunk) => chunk.bytes))
       console.log(`  ${locale}: ${meta.entryCount} entries / ${meta.chunks.length} chunks (max ${maxBytes} bytes)`)
     }
+    // 这个目录是 cmyyx/cep-assets 子模块的工作区: 没初始化时导出照样成功, 但改动不会提交到子仓
+    if (!existsSync(join(gameI18nDir, '.git'))) {
+      console.warn('  ⚠ public/game-i18n 缺 .git — 未初始化 cep-assets 子模块, 本次导出不会进子仓')
+      console.warn('    修复: git submodule update --init --recursive')
+    }
   }
 
   // Validate existing data against upstream

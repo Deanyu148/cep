@@ -222,6 +222,27 @@ export function pruneDuplicateIconMedia(outDir) {
   return { deleted, bytes }
 }
 
+/**
+ * 删除 out/game-i18n/ 下不属于导出内容的仓库元文件。
+ *
+ * `public/game-i18n` 是 cmyyx/cep-assets 子模块的工作区，子仓根的 README.md 与
+ * .gitattributes 会被 Next 的静态导出原样复制到 out/，从而作为站点资源公开。
+ * 导出只写 manifest.json 与 <locale>/<chunk>.json，这两个文件不是导出产物。
+ */
+export function pruneSubmoduleDocs(outDir) {
+  const names = ['README.md', '.gitattributes']
+  let deleted = 0
+  let bytes = 0
+  for (const name of names) {
+    const entryPath = path.join(outDir, 'game-i18n', name)
+    if (!existsSync(entryPath)) continue
+    bytes += statSync(entryPath).size
+    unlinkSync(entryPath)
+    deleted += 1
+  }
+  return { deleted, bytes }
+}
+
 function main() {
   const outDir = path.resolve(process.cwd(), 'out')
   if (!existsSync(outDir)) {
@@ -244,6 +265,11 @@ function main() {
     console.log(
       `prune-export: 已删除 ${media.deleted} 个未引用的图标指纹副本, 释放 ${(media.bytes / 1024 / 1024).toFixed(1)} MB`,
     )
+  }
+
+  const docs = pruneSubmoduleDocs(outDir)
+  if (docs.deleted > 0) {
+    console.log(`prune-export: 已删除 out/game-i18n 下 ${docs.deleted} 个子模块元文件 (README.md/.gitattributes)`)
   }
 }
 

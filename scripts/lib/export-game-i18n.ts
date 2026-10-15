@@ -279,6 +279,20 @@ export function installExportDirectory(
     throw error
   }
 
+  // 输出目录是 CEP 的子模块 (cmyyx/cep-assets) 的工作区: 目录被整体替换后, 子模块的 `.git`
+  // (文件或目录) 落在 backup 里。不搬回来这个路径就不再是子模块 —— git 无法在里提交,
+  // 主仓也看不到指针变化。只有在 backup 里真的存在 `.git` 时才动。
+  if (hadOutput) {
+    const backupGit = join(backupDir, '.git')
+    if (operations.existsSync(backupGit)) {
+      try {
+        operations.renameSync(backupGit, join(outputDir, '.git'))
+      } catch (error) {
+        throw new Error(`Failed to preserve submodule .git after game-i18n export: ${String(error)}`)
+      }
+    }
+  }
+
   try {
     operations.rmSync(tempDir, { recursive: true, force: true })
   } catch {

@@ -121,6 +121,15 @@ jobs:
         with:
           persist-credentials: false
 
+      # 主仓 checkout 不拉子模块: 这里显式 clone, 因为稍后要在这个工作区里 commit + push。
+      # --no-checkout: 导出会全量重写 33 个文件, 不需要先下载 220 MB 旧内容。
+      - name: Checkout cep-assets submodule (public/game-i18n)
+        env:
+          GH_FORK_SYNC_TOKEN: ${{ secrets.GH_FORK_SYNC_TOKEN }}
+        run: |
+          git clone --filter=blob:none --no-checkout \
+            "https://oauth2:${GH_FORK_SYNC_TOKEN}@github.com/cmyyx/cep-assets.git" public/game-i18n
+
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v6
         with:
@@ -192,18 +201,48 @@ jobs:
         if: always()
         run: rm -rf "$RUNNER_TEMP/upstream"
 
-      - name: Verify no submodule pollution
+      - name: Commit game-i18n export to cep-assets
+        env:
+          GH_FORK_SYNC_TOKEN: ${{ secrets.GH_FORK_SYNC_TOKEN }}
         run: |
-          if [ -f .gitmodules ]; then
-            echo "::error::.gitmodules file detected in working tree! This indicates submodule pollution from upstream repo clones. Contents:"
-            cat .gitmodules
+          cd public/game-i18n
+          if [ ! -e .git ]; then
+            echo "::error::public/game-i18n/.git 丢失 —— 导出把子模块工作区覆盖了 (export-game-i18n 保留 .git 的逻辑回归)"
             exit 1
           fi
-          if git ls-files --error-unmatch .gitmodules >/dev/null 2>&1; then
-            echo "::error::.gitmodules is tracked by git! Submodule pollution has been committed."
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "cep-assets: 无变化"
+          else
+            git commit -m "chore: sync game i18n export (${GITHUB_SHA:0:7})"
+            git push origin HEAD:main
+          fi
+          cd "$GITHUB_WORKSPACE"
+          # 把子仓新提交写成主仓的子模块指针 (随 PR 一起提交)
+          git add public/game-i18n
+
+      - name: Verify submodule list
+        run: |
+          # 历史上上游 sparse clone 会把 .gitmodules 带进工作区; 现在仓库有一个合法子模块
+          # (public/game-i18n -> cmyyx/cep-assets), 所以校验"子模块列表恰好等于预期"。
+          if [ ! -f .gitmodules ]; then
+            echo "::error::.gitmodules 缺失 —— public/game-i18n 应为 cep-assets 子模块"
             exit 1
           fi
-          echo "Submodule check passed — no .gitmodules pollution."
+          actual=$(git config -f .gitmodules --get-regexp '^submodule\..*\.path$' | awk '{print $2}' | sort)
+          if [ "$actual" != "public/game-i18n" ]; then
+            echo "::error::子模块列表与预期不符:"
+            printf '%s\n' "$actual"
+            exit 1
+          fi
+          ptr=$(git ls-files -s public/game-i18n | awk '{print $2}')
+          if [ "$ptr" != "160000" ]; then
+            echo "::error::public/game-i18n 不是子模块指针 (mode=$ptr)"
+            exit 1
+          fi
+          echo "Submodule check passed — only public/game-i18n (cep-assets)."
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
@@ -226,4 +265,5 @@ jobs:
             - `src/generated/i18n/dungeons/`
             - `src/generated/i18n/stats/`
             - `src/generated/i18n/regions/`
+            - `cep-assets` 子模块指针（`public/game-i18n` 游戏文案导出，内容已推送到 cmyyx/cep-assets）
             ${{ steps.sync.outputs.character_scrape_skipped == 'true' && format('⚠️ 头像未刷新：Skland 角色头像抓取被跳过（{0}），已有头像保留不变，需手动补刷。', steps.sync.outputs.character_scrape_reason) || '' }}

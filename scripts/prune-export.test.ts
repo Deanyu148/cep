@@ -8,6 +8,7 @@ import {
   injectInlineGuards,
   pruneDuplicateIconMedia,
   pruneSegmentPayloads,
+  pruneSubmoduleDocs,
   resolveSiblingPagePayload,
 } from './prune-export.mjs'
 
@@ -32,6 +33,30 @@ function writeTree(root: string, files: Record<string, string>) {
     writeFileSync(filePath, content)
   }
 }
+
+describe('pruneSubmoduleDocs', () => {
+  it('removes the cep-assets submodule meta files from the exported site', () => {
+    const out = createFixture()
+    writeTree(out, {
+      'game-i18n/README.md': '# cep-assets',
+      'game-i18n/.gitattributes': '* -text',
+      'game-i18n/manifest.json': '{}',
+      'game-i18n/zh-CN/000.json': '{}',
+    })
+
+    expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 2, bytes: 19 })
+    expect(existsSync(path.join(out, 'game-i18n', 'manifest.json'))).toBe(true)
+    expect(existsSync(path.join(out, 'game-i18n', 'zh-CN', '000.json'))).toBe(true)
+
+    // 再次运行不应报错 (幂等)
+    expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 0, bytes: 0 })
+  })
+
+  it('is a no-op when the export has no game-i18n directory', () => {
+    const out = createFixture()
+    expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 0, bytes: 0 })
+  })
+})
 
 describe('pruneSegmentPayloads', () => {
   it('deletes every __next.* payload while keeping page payloads', () => {

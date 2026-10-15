@@ -159,6 +159,13 @@ function main() {
   // 轮询用轻量文件，不含 changelog
   const imageManifest = generateImageManifest()
   const gameI18nManifest = generateGameI18nManifest()
+  // 这个目录是 cmyyx/cep-assets 子模块的工作区：没初始化时它就是空的，
+  // 清单会静默变 0 条 (前端拿不到内容指纹)，所以这里直接报错。
+  if (Object.keys(gameI18nManifest).length === 0) {
+    throw new Error(
+      "public/game-i18n is empty — it is the cmyyx/cep-assets submodule. Run `git submodule update --init --recursive` (CI needs actions/checkout `submodules: true`).",
+    )
+  }
   const announcementManifest = generateAnnouncementManifest()
   const version = {
     commit: commitHash,
