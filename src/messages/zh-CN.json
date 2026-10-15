@@ -637,6 +637,7 @@
     "freeTier": "免费",
     "sponsorTier": "赞助者",
     "goToAfdian": "跳转到爱发电",
+    "afdianUidHint": "订单留言已自动填入你的 UID（{uid}），请勿修改，否则无法自动到账。付款后会员通常在 1 分钟内自动开通。",
     "feedbackHint": "赞助后相关权益会自动开通，如您遇到问题，可通过下列渠道反馈",
     "feedbackEmail": "邮箱",
     "feedbackQQ": "QQ群 1045523485（请私信或艾特璨梦踏月）",

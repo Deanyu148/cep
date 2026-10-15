@@ -225,6 +225,7 @@
     "freeTier": "免費",
     "sponsorTier": "贊助者",
     "goToAfdian": "前往愛發電",
+    "afdianUidHint": "訂單留言已自動填入你的 UID（{uid}），請勿修改，否則無法自動到帳。付款後會員通常在 1 分鐘內自動開通。",
     "feedbackHint": "贊助後相關權益會自動開通，如您遇到問題，可透過下列管道反饋",
     "feedbackEmail": "信箱",
     "feedbackQQ": "QQ群 1045523485",

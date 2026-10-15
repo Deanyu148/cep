@@ -26,6 +26,7 @@ import { redeemCodeApi } from '@/lib/api'
 import { resolveWeaponId, resolveS1Selections } from '@/lib/resolve-weapon-id'
 import { sanitizeCloudAccounts } from '@/lib/essence-accounts'
 import { sanitizeCustomWeapons } from '@/lib/persist-sanitizer'
+import { AFDIAN_OFFERS, buildAfdianOrderUrl, resolveAfdianPlanKey, type AfdianOffer } from '@/lib/afdian'
 
 // ─── Sync ────────────────────────────────────────────────────
 
@@ -184,13 +185,10 @@ export default function AccountPage() {
   const revokeSession = useAuthStore(s => s.revokeSession)
 
   // Payment
-  // Afdian membership links
-  const afdianUrl = (planId: string) => {
-    const url = new URL('https://afdian.com/order/create')
-    url.searchParams.set('plan_id', planId)
-    url.searchParams.set('product_type', '0')
-    url.searchParams.set('remark', String(userId ?? ''))
-    return url.toString()
+  // Afdian 售卖商品 links: product_type=1 + sku are required, remark carries the CEP UID
+  const afdianUrl = (offer: AfdianOffer) => {
+    if (!userId) return undefined
+    return buildAfdianOrderUrl({ offer, uid: userId })
   }
 
   // Redeem
@@ -1015,12 +1013,14 @@ export default function AccountPage() {
               </Table>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-              { [
-                ['monthly', 'bfe39db6ad0811f1989652540025c377', 'account.priceMonthly', 'account.priceMonthlyAmount', ''],
-                ['quarterly', 'c532f0e0ad0e11f18ee35254001e7c00', 'account.priceQuarterly', 'account.priceQuarterlyAmount', '19'],
-                ['yearly', 'c96c30a4ad0e11f188475254001e7c00', 'account.priceYearly', 'account.priceYearlyAmount', '40'],
-              ].map(([key, planId, nameKey, amountKey, save]) => (
-                <Button key={key} variant="outline" className={cn('h-auto min-h-20 flex-col gap-1 p-3', key === 'yearly' && 'border-amber-300 bg-amber-50/70 hover:bg-amber-100/70')} nativeButton={false} render={<a href={userId ? afdianUrl(planId) : undefined} target="_blank" rel="noopener noreferrer" />} disabled={!userId}>
+              { (
+                [
+                  ['monthly', AFDIAN_OFFERS.monthly, 'account.priceMonthly', 'account.priceMonthlyAmount', ''],
+                  ['quarterly', AFDIAN_OFFERS.quarterly, 'account.priceQuarterly', 'account.priceQuarterlyAmount', '19'],
+                  ['yearly', AFDIAN_OFFERS.yearly, 'account.priceYearly', 'account.priceYearlyAmount', '40'],
+                ] as [string, AfdianOffer, string, string, string][]
+              ).map(([key, offer, nameKey, amountKey, save]) => (
+                <Button key={key} variant="outline" className={cn('h-auto min-h-20 flex-col gap-1 p-3', key === 'yearly' && 'border-amber-300 bg-amber-50/70 hover:bg-amber-100/70')} nativeButton={false} render={<a href={afdianUrl(offer)} target="_blank" rel="noopener noreferrer" />} disabled={!userId}>
                   <span className="text-xs">{t(nameKey)}</span>
                   <span className="text-base font-semibold">{t(amountKey)}</span>
                   <span className="text-[11px] text-muted-foreground">{t('account.goToAfdian')}</span>
@@ -1029,9 +1029,11 @@ export default function AccountPage() {
                 </Button>
               ))}
             </div>
+            {userId ? <p className="text-[11px] text-muted-foreground rounded-md bg-muted/50 px-3 py-2">{t('account.afdianUidHint', { uid: userId })}</p> : null}
             <div className="flex flex-col gap-1.5"><span className="text-xs font-medium text-muted-foreground">{t('account.membershipHelp')}</span><p className="text-xs text-muted-foreground">{t('account.feedbackHint')}</p><div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs"><Button variant="link" size="sm" className="h-auto p-0" nativeButton={false} render={<a href="mailto:admin@canmoe.com" />}><Mail className="size-3" />{t('account.feedbackEmail')}</Button><span className="text-muted-foreground">{t('account.feedbackQQ')}</span><Button variant="link" size="sm" className="h-auto p-0" nativeButton={false} render={<a href="https://space.bilibili.com/1580942601" target="_blank" rel="noopener noreferrer" />}><ExternalLink className="size-3" />{t('account.feedbackBilibili')}</Button><Button variant="link" size="sm" className="h-auto p-0" nativeButton={false} render={<a href="https://afdian.com/a/cmtyx" target="_blank" rel="noopener noreferrer" />}><ExternalLink className="size-3" />{t('account.feedbackAfdian')}</Button></div></div>
             {sponsorshipOrders.length > 0 && <div className="space-y-2"><h4 className="text-xs font-medium text-muted-foreground">{t('account.sponsorshipHistory')}</h4>{sponsorshipOrders.map((order) => {
-              const planName = order.plan_id === 'bfe39db6ad0811f1989652540025c377' ? t('account.priceMonthly') : order.plan_id === 'c532f0e0ad0e11f18ee35254001e7c00' ? t('account.priceQuarterly') : order.plan_id === 'c96c30a4ad0e11f188475254001e7c00' ? t('account.priceYearly') : t('account.sponsorshipCustom')
+              const planKey = resolveAfdianPlanKey(order.plan_id)
+              const planName = planKey === 'monthly' ? t('account.priceMonthly') : planKey === 'quarterly' ? t('account.priceQuarterly') : planKey === 'yearly' ? t('account.priceYearly') : t('account.sponsorshipCustom')
               return <div key={order.out_trade_no} className="rounded-md border border-border px-3 py-2 text-xs"><div className="flex justify-between items-center"><span className="text-muted-foreground">{planName}</span>{order.fulfillment_status === 'reversed' ? <Badge className="bg-red-100 text-red-700">{t('account.sponsorshipReversed')}</Badge> : <Badge className={order.fulfillment_status === 'fulfilled' ? 'bg-green-100 text-green-700' : 'bg-amber-100 text-amber-700'}>{order.fulfillment_status === 'fulfilled' ? t('account.sponsorshipFulfilled') : t('account.sponsorshipPending')}</Badge>}</div><div className="text-muted-foreground mt-1">{order.total_amount ?? order.show_amount ?? '—'} · {order.out_trade_no}</div></div>
             })}</div>}
           </CardContent>

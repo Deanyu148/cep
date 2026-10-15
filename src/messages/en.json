@@ -225,6 +225,7 @@
     "freeTier": "Free",
     "sponsorTier": "Sponsor",
     "goToAfdian": "Go to Afdian",
+    "afdianUidHint": "Your UID ({uid}) is pre-filled in the order message. Do not change it, or the membership cannot be granted automatically. Membership is usually activated within 1 minute after payment.",
     "feedbackHint": "Your sponsorship benefits are activated automatically. If you encounter a problem, contact us through one of the channels below.",
     "feedbackEmail": "Email",
     "feedbackQQ": "QQ Group 1045523485",
