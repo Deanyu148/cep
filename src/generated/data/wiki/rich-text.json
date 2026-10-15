@@ -2,26 +2,53 @@
   "adv.electricFence": {
     "styleId": "gd.key"
   },
+  "ba.crystonchar": {
+    "styleId": "ba.cryst"
+  },
+  "ba.fracture": {
+    "styleId": "ba.phy"
+  },
   "adv.eswitch": {
+    "styleId": "gd.key"
+  },
+  "item.glassBottle": {
     "styleId": "gd.key"
   },
   "adv.jumpMachine": {
     "styleId": "gd.key"
   },
+  "ba.fireenhance": {
+    "styleId": "ba.fire"
+  },
   "adv.powerTerminal": {
+    "styleId": "gd.key"
+  },
+  "item.plantMossSeed1": {
     "styleId": "gd.key"
   },
   "ba.absorb": {
     "styleId": ""
   },
-  "ba.crush": {
-    "styleId": "ba.phy"
+  "ba.crystvul": {
+    "styleId": "ba.cryst"
   },
   "ba.airborne": {
     "styleId": "ba.phy"
   },
+  "fac.hub": {
+    "styleId": "gd.key"
+  },
+  "item.originium": {
+    "styleId": "gd.key"
+  },
+  "item.portSoilSp1": {
+    "styleId": "gd.key"
+  },
   "ba.arrowenergy": {
     "styleId": "ba.key"
+  },
+  "item.originiumEnrPowder": {
+    "styleId": "gd.key"
   },
   "ba.arrownum": {
     "styleId": "ba.key"
@@ -32,23 +59,17 @@
   "ba.burningonchar": {
     "styleId": "ba.fire"
   },
-  "ba.corruptonchar": {
-    "styleId": "ba.natur"
-  },
   "ba.combo": {
     "styleId": "ba.key"
   },
-  "ba.conductonchar": {
-    "styleId": "ba.pulse"
-  },
-  "item.plantMossSeed3": {
-    "styleId": "gd.key"
+  "ba.static": {
+    "styleId": "ba.key"
   },
   "ba.conduct": {
     "styleId": "ba.pulse"
   },
-  "item.carbonMtl": {
-    "styleId": "gd.key"
+  "ba.conductonchar": {
+    "styleId": "ba.pulse"
   },
   "ba.consume": {
     "styleId": ""
@@ -56,28 +77,31 @@
   "ba.corrupt": {
     "styleId": "ba.natur"
   },
-  "ba.dot": {
-    "styleId": ""
+  "ba.corruptonchar": {
+    "styleId": "ba.natur"
   },
-  "ba.noguard": {
+  "item.plantSpSeed1": {
+    "styleId": "gd.key"
+  },
+  "ba.crush": {
     "styleId": "ba.phy"
+  },
+  "ba.guard": {
+    "styleId": "ba.key"
+  },
+  "ba.spellvul": {
+    "styleId": "ba.key"
   },
   "ba.crystbreak": {
     "styleId": "ba.cryst"
   },
-  "ba.frozenonchar": {
-    "styleId": "ba.cryst"
-  },
-  "ba.poiseknot": {
-    "styleId": "ba.poise"
-  },
   "ba.crystburst": {
     "styleId": "ba.cryst"
   },
-  "ba.crystonchar": {
-    "styleId": "ba.cryst"
+  "item.glassCmpt": {
+    "styleId": "gd.key"
   },
-  "item.plantMossPowder3": {
+  "item.ironNugget": {
     "styleId": "gd.key"
   },
   "ba.crystenhance": {
@@ -86,166 +110,172 @@
   "ba.crystinflict": {
     "styleId": "ba.cryst"
   },
-  "ba.pulseonchar": {
-    "styleId": "ba.pulse"
-  },
-  "ba.crystvul": {
-    "styleId": "ba.cryst"
-  },
-  "ba.return": {
-    "styleId": ""
-  },
   "ba.dispel": {
     "styleId": "ba.key"
   },
-  "item.ironOre": {
+  "item.bbflowerPowder": {
     "styleId": "gd.key"
+  },
+  "ba.dot": {
+    "styleId": ""
   },
   "ba.enhance": {
     "styleId": "ba.key"
   },
-  "ba.fireburst": {
-    "styleId": "ba.fire"
+  "item.plantMossSeed3": {
+    "styleId": "gd.key"
   },
-  "ba.fireenhance": {
+  "ba.fireburst": {
     "styleId": "ba.fire"
   },
   "ba.fireinflict": {
     "styleId": "ba.fire"
   },
-  "ba.naturalenhance": {
-    "styleId": "ba.natur"
-  },
-  "item.portSoilMoss1": {
+  "item.quartzPowder": {
     "styleId": "gd.key"
   },
   "ba.fireonchar": {
     "styleId": "ba.fire"
   },
-  "fac.hub": {
+  "sys.tacticalItem": {
     "styleId": "gd.key"
   },
   "ba.firevul": {
     "styleId": "ba.fire"
   },
-  "ba.fracture": {
-    "styleId": "ba.phy"
-  },
-  "sys.manualCraft": {
-    "styleId": "gd.key"
-  },
-  "ba.frozen": {
-    "styleId": "ba.cryst"
-  },
-  "ba.guard": {
-    "styleId": "ba.key"
-  },
-  "ba.knockdown": {
-    "styleId": "ba.phy"
-  },
-  "ba.pulseburst": {
+  "ba.pulseonchar": {
     "styleId": "ba.pulse"
   },
-  "ba.lastcombo": {
-    "styleId": ""
-  },
-  "ba.spellinflict": {
+  "ba.slow": {
     "styleId": "ba.key"
   },
-  "ba.naturalburst": {
-    "styleId": "ba.natur"
-  },
-  "ba.naturalinflict": {
-    "styleId": "ba.natur"
-  },
-  "item.crystalShell": {
-    "styleId": "gd.key"
-  },
-  "item.originium": {
-    "styleId": "gd.key"
-  },
-  "ba.naturalonchar": {
-    "styleId": "ba.natur"
-  },
-  "ba.naturalvul": {
-    "styleId": "ba.natur"
-  },
-  "item.plantSpSeed1": {
-    "styleId": "gd.key"
-  },
-  "ba.originium": {
+  "ba.fixeddamage": {
     "styleId": "ba.key"
   },
   "ba.physicalenhance": {
     "styleId": "ba.phy"
   },
-  "ba.physicalstatus": {
+  "ba.pulseenhance": {
+    "styleId": "ba.pulse"
+  },
+  "ba.spellenhance": {
+    "styleId": "ba.key"
+  },
+  "ba.frozen": {
+    "styleId": "ba.cryst"
+  },
+  "ba.frozenonchar": {
+    "styleId": "ba.cryst"
+  },
+  "ba.naturalvul": {
+    "styleId": "ba.natur"
+  },
+  "ba.knockdown": {
     "styleId": "ba.phy"
   },
-  "item.bbflowerPowder": {
+  "item.ironEnrPowder": {
     "styleId": "gd.key"
+  },
+  "item.portSoilMoss1": {
+    "styleId": "gd.key"
+  },
+  "item.quartzSand": {
+    "styleId": "gd.key"
+  },
+  "sys.manualCraft": {
+    "styleId": "gd.key"
+  },
+  "ba.lastcombo": {
+    "styleId": ""
+  },
+  "ba.vulnerable": {
+    "styleId": "ba.key"
+  },
+  "ba.naturalburst": {
+    "styleId": "ba.natur"
+  },
+  "ba.noguard": {
+    "styleId": "ba.phy"
+  },
+  "item.ironOre": {
+    "styleId": "gd.key"
+  },
+  "ba.naturalenhance": {
+    "styleId": "ba.natur"
+  },
+  "item.originiumPowder": {
+    "styleId": "gd.key"
+  },
+  "ba.naturalinflict": {
+    "styleId": "ba.natur"
+  },
+  "ba.naturalonchar": {
+    "styleId": "ba.natur"
+  },
+  "ba.originium": {
+    "styleId": "ba.key"
+  },
+  "ba.physicalstatus": {
+    "styleId": "ba.phy"
   },
   "ba.physicalvul": {
     "styleId": "ba.phy"
   },
-  "item.bbflowerSeed": {
+  "ba.poiseknot": {
+    "styleId": "ba.poise"
+  },
+  "sys.manualCraftDish": {
     "styleId": "gd.key"
   },
-  "ba.pulseenhance": {
+  "ba.pulseburst": {
     "styleId": "ba.pulse"
   },
-  "item.procBomb": {
+  "item.portSoilMoss3": {
     "styleId": "gd.key"
   },
   "ba.pulseinflict": {
     "styleId": "ba.pulse"
   },
-  "item.plantMoss3": {
-    "styleId": "gd.key"
-  },
   "ba.pulsevul": {
     "styleId": "ba.pulse"
   },
-  "ba.rossi": {
-    "styleId": "ba.key"
-  },
-  "ba.shield": {
-    "styleId": "ba.key"
-  },
-  "ba.slow": {
-    "styleId": "ba.key"
-  },
-  "ba.speedup": {
-    "styleId": "ba.key"
-  },
-  "ba.spellstatus": {
-    "styleId": "ba.key"
-  },
-  "item.procBattery1": {
-    "styleId": "gd.key"
-  },
-  "ba.spellburst": {
-    "styleId": "ba.key"
-  },
-  "sys.manualCraftField": {
-    "styleId": "gd.key"
-  },
   "ba.spelldmg": {
+    "styleId": "ba.key"
+  },
+  "ba.return": {
+    "styleId": ""
+  },
+  "sys.manualCraftTonic": {
+    "styleId": "gd.key"
+  },
+  "ba.rossi": {
     "styleId": "ba.key"
   },
   "item.ironPowder": {
     "styleId": "gd.key"
   },
-  "ba.spellenhance": {
+  "ba.shield": {
     "styleId": "ba.key"
+  },
+  "sys.manualCraftField": {
+    "styleId": "gd.key"
+  },
+  "ba.speedup": {
+    "styleId": "ba.key"
+  },
+  "ba.spellburst": {
+    "styleId": "ba.key"
+  },
+  "ba.spellinflict": {
+    "styleId": "ba.key"
+  },
+  "item.procBattery1": {
+    "styleId": "gd.key"
   },
   "ba.spellinflictonchar": {
     "styleId": "ba.key"
   },
-  "ba.vulnerable": {
-    "styleId": "ba.key"
-  },
-  "ba.spellvul": {
+  "ba.spellstatus": {
     "styleId": "ba.key"
   },
   "ba.statuslevel": {
@@ -254,34 +284,22 @@
   "ba.weak": {
     "styleId": "ba.key"
   },
-  "sys.tacticalItem": {
-    "styleId": "gd.key"
-  },
   "item.bbflower": {
     "styleId": "gd.key"
   },
-  "item.ironEnrPowder": {
+  "item.bbflowerSeed": {
+    "styleId": "gd.key"
+  },
+  "item.plantMoss3": {
     "styleId": "gd.key"
   },
   "item.bottledRecHp1": {
     "styleId": "gd.key"
   },
-  "item.glassBottle": {
+  "item.carbonMtl": {
     "styleId": "gd.key"
   },
-  "sys.manualCraftDish": {
-    "styleId": "gd.key"
-  },
-  "item.glassCmpt": {
-    "styleId": "gd.key"
-  },
-  "item.ironNugget": {
-    "styleId": "gd.key"
-  },
-  "item.originiumEnrPowder": {
-    "styleId": "gd.key"
-  },
-  "item.originiumPowder": {
+  "item.crystalShell": {
     "styleId": "gd.key"
   },
   "item.plantMoss1": {
@@ -290,7 +308,7 @@
   "item.plantMossPowder1": {
     "styleId": "gd.key"
   },
-  "item.plantMossSeed1": {
+  "item.plantMossPowder3": {
     "styleId": "gd.key"
   },
   "item.plantMossSpc1": {
@@ -302,22 +320,10 @@
   "item.portSoilBbflower": {
     "styleId": "gd.key"
   },
-  "item.portSoilMoss3": {
-    "styleId": "gd.key"
-  },
-  "item.quartzPowder": {
-    "styleId": "gd.key"
-  },
-  "item.portSoilSp1": {
+  "item.procBomb": {
     "styleId": "gd.key"
   },
   "item.quartzGlass": {
-    "styleId": "gd.key"
-  },
-  "item.quartzSand": {
-    "styleId": "gd.key"
-  },
-  "sys.manualCraftTonic": {
     "styleId": "gd.key"
   }
 }

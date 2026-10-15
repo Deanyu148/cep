@@ -12,30 +12,12 @@ export const wikiEquipment = [
     "minimumLevel": 10
   },
   {
-    "id": "item_equip_t4_suit_combo_cd01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_combo_cd01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t0_parts_tundra01_body_02",
     "category": "equipment",
     "rarity": 1,
     "imageId": "item_equip_t0_parts_tundra01_body_02",
     "partTypeId": "0",
     "minimumLevel": 10
-  },
-  {
-    "id": "item_equip_t4_suit_attri01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_edc_06",
-    "partTypeId": "2",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70
   },
   {
     "id": "item_equip_t0_parts_tundra01_hand_01",
@@ -46,12 +28,21 @@ export const wikiEquipment = [
     "minimumLevel": 10
   },
   {
-    "id": "item_equip_t4_suit_pulse_cryst01_hand_01",
+    "id": "item_equip_t4_suit_combo_cd01_hand_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_pulse_cryst01_hand_01",
+    "imageId": "item_equip_t4_suit_combo_cd01_hand_02",
     "partTypeId": "1",
-    "suitId": "suit_pulse_cryst01",
+    "suitId": "suit_combo_cd01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_edc_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_edc_03",
+    "partTypeId": "2",
+    "suitId": "suit_fire_natr01",
     "minimumLevel": 70
   },
   {
@@ -63,13 +54,22 @@ export const wikiEquipment = [
     "minimumLevel": 10
   },
   {
-    "id": "item_equip_t2_suit_wisd01_edc_03",
+    "id": "item_equip_t4_suit_poise01_edc_02",
     "category": "equipment",
-    "rarity": 3,
-    "imageId": "item_equip_t2_suit_wisd01_edc_03",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_poise01_edc_02",
     "partTypeId": "2",
-    "suitId": "suit_wisd01",
-    "minimumLevel": 36
+    "suitId": "suit_poise01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t1_parts_tundra01_body_01",
@@ -80,6 +80,16 @@ export const wikiEquipment = [
     "minimumLevel": 20
   },
   {
+    "id": "item_equip_t4_suit_atb01_hand_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_hand_03",
+    "partTypeId": "1",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
     "id": "item_equip_t1_parts_tundra01_body_02",
     "category": "equipment",
     "rarity": 2,
@@ -88,13 +98,13 @@ export const wikiEquipment = [
     "minimumLevel": 20
   },
   {
-    "id": "item_equip_t4_suit_atb01_edc_01",
+    "id": "item_equip_t2_suit_wisd01_edc_03",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_edc_01",
+    "rarity": 3,
+    "imageId": "item_equip_t2_suit_wisd01_edc_03",
     "partTypeId": "2",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70
+    "suitId": "suit_wisd01",
+    "minimumLevel": 36
   },
   {
     "id": "item_equip_t1_parts_tundra01_body_03",
@@ -105,33 +115,13 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t3_suit_agi01_body_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_agi01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_agi01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t3_suit_atk01_edc_02",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_atk01_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_atk01",
-    "minimumLevel": 50
-  },
-  {
-    "id": "item_equip_t4_suit_criti01_body_06",
+    "id": "item_equip_t4_suit_atb01_hand_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_body_06",
-    "partTypeId": "0",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "imageId": "item_equip_t4_suit_atb01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t1_parts_tundra01_body_04",
@@ -160,128 +150,12 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_suit_atk02_body_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atk02_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_atk02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
     "id": "item_equip_t1_parts_tundra01_body_06",
     "category": "equipment",
     "rarity": 2,
     "imageId": "item_equip_t1_parts_tundra01_body_06",
     "partTypeId": "0",
     "minimumLevel": 28
-  },
-  {
-    "id": "item_equip_t4_suit_criti01_body_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_body_03",
-    "partTypeId": "0",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t1_parts_tundra01_edc_01",
-    "category": "equipment",
-    "rarity": 2,
-    "imageId": "item_equip_t1_parts_tundra01_edc_01",
-    "partTypeId": "2",
-    "minimumLevel": 20
-  },
-  {
-    "id": "item_equip_t4_suit_heal01_body_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_body_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t1_parts_tundra01_edc_02",
-    "category": "equipment",
-    "rarity": 2,
-    "imageId": "item_equip_t1_parts_tundra01_edc_02",
-    "partTypeId": "2",
-    "minimumLevel": 20
-  },
-  {
-    "id": "item_equip_t3_suit_usp01_body_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_usp01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_usp01",
-    "minimumLevel": 50
-  },
-  {
-    "id": "item_equip_t1_parts_tundra01_hand_01",
-    "category": "equipment",
-    "rarity": 2,
-    "imageId": "item_equip_t1_parts_tundra01_hand_01",
-    "partTypeId": "1",
-    "minimumLevel": 20
-  },
-  {
-    "id": "item_equip_t4_parts_wuling00_body_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_body_04",
-    "partTypeId": "0",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
-  },
-  {
-    "id": "item_equip_t1_parts_tundra01_hand_02",
-    "category": "equipment",
-    "rarity": 2,
-    "imageId": "item_equip_t1_parts_tundra01_hand_02",
-    "partTypeId": "1",
-    "minimumLevel": 28
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_hand_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_hand_03",
-    "partTypeId": "1",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_burst01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_burst01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t1_parts_tundra01_hand_03",
-    "category": "equipment",
-    "rarity": 2,
-    "imageId": "item_equip_t1_parts_tundra01_hand_03",
-    "partTypeId": "1",
-    "minimumLevel": 20
   },
   {
     "id": "item_equip_t4_suit_atb01_hand_02",
@@ -293,6 +167,65 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
+    "id": "item_equip_t4_suit_attri01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeII"
+  },
+  {
+    "id": "item_equip_t1_parts_tundra01_edc_01",
+    "category": "equipment",
+    "rarity": 2,
+    "imageId": "item_equip_t1_parts_tundra01_edc_01",
+    "partTypeId": "2",
+    "minimumLevel": 20
+  },
+  {
+    "id": "item_equip_t1_parts_tundra01_edc_02",
+    "category": "equipment",
+    "rarity": 2,
+    "imageId": "item_equip_t1_parts_tundra01_edc_02",
+    "partTypeId": "2",
+    "minimumLevel": 20
+  },
+  {
+    "id": "item_equip_t1_parts_tundra01_hand_01",
+    "category": "equipment",
+    "rarity": 2,
+    "imageId": "item_equip_t1_parts_tundra01_hand_01",
+    "partTypeId": "1",
+    "minimumLevel": 20
+  },
+  {
+    "id": "item_equip_t1_parts_tundra01_hand_02",
+    "category": "equipment",
+    "rarity": 2,
+    "imageId": "item_equip_t1_parts_tundra01_hand_02",
+    "partTypeId": "1",
+    "minimumLevel": 28
+  },
+  {
+    "id": "item_equip_t4_suit_crush_fracture_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_crush_fracture_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_crush_fracture",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t1_parts_tundra01_hand_03",
+    "category": "equipment",
+    "rarity": 2,
+    "imageId": "item_equip_t1_parts_tundra01_hand_03",
+    "partTypeId": "1",
+    "minimumLevel": 20
+  },
+  {
     "id": "item_equip_t1_parts_tundra01_hand_04",
     "category": "equipment",
     "rarity": 2,
@@ -301,13 +234,13 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_parts_wuling00_body_01",
+    "id": "item_equip_t4_suit_burst01_edc_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
+    "imageId": "item_equip_t4_suit_burst01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_burst01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t1_suit_stragi01_body_01",
@@ -319,15 +252,6 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_suit_criti01_edc_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t1_suit_stragi01_edc_01",
     "category": "equipment",
     "rarity": 2,
@@ -337,13 +261,13 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_suit_atb01_edc_03",
+    "id": "item_equip_t2_suit_wisd01_body_01",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70
+    "rarity": 3,
+    "imageId": "item_equip_t2_suit_wisd01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_wisd01",
+    "minimumLevel": 36
   },
   {
     "id": "item_equip_t1_suit_stragi01_edc_02",
@@ -355,6 +279,15 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
+    "id": "item_equip_t4_parts_wuling00_edc_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling00_edc_05",
+    "partTypeId": "2",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
+  },
+  {
     "id": "item_equip_t1_suit_stragi01_hand_01",
     "category": "equipment",
     "rarity": 2,
@@ -364,22 +297,21 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_suit_atb01_body_04",
+    "id": "item_equip_t4_suit_heal01_edc_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeIII"
+    "imageId": "item_equip_t4_suit_heal01_edc_03",
+    "partTypeId": "2",
+    "suitId": "suit_heal01",
+    "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_poise01_body_01",
+    "id": "item_equip_t4_suit_pulse_cryst01_edc_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_poise01",
+    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_pulse_cryst01",
     "minimumLevel": 70
   },
   {
@@ -392,16 +324,6 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t3_suit_agi01_edc_03",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_agi01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_agi01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
     "id": "item_equip_t1_suit_wisdwill01_edc_01",
     "category": "equipment",
     "rarity": 2,
@@ -411,14 +333,13 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_suit_attri01_edc_05",
+    "id": "item_equip_t4_suit_criti01_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_edc_05",
-    "partTypeId": "2",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "imageId": "item_equip_t4_suit_criti01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t1_suit_wisdwill01_edc_02",
@@ -430,13 +351,14 @@ export const wikiEquipment = [
     "minimumLevel": 28
   },
   {
-    "id": "item_equip_t4_parts_wuling00_hand_01",
+    "id": "item_equip_t4_suit_crush_fracture_hand_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_hand_01",
+    "imageId": "item_equip_t4_suit_crush_fracture_hand_02",
     "partTypeId": "1",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
+    "suitId": "suit_crush_fracture",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t1_suit_wisdwill01_hand_01",
@@ -456,13 +378,14 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t2_suit_str01_body_01",
+    "id": "item_equip_t4_suit_attri01_body_04",
     "category": "equipment",
-    "rarity": 3,
-    "imageId": "item_equip_t2_suit_str01_body_01",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_body_04",
     "partTypeId": "0",
-    "suitId": "suit_str01",
-    "minimumLevel": 36
+    "suitId": "suit_attri01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t2_parts_tundra01_edc_02",
@@ -473,14 +396,13 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t3_suit_wisd01_edc_01",
+    "id": "item_equip_t2_suit_str01_hand_01",
     "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_wisd01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_wisd01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeII"
+    "rarity": 3,
+    "imageId": "item_equip_t2_suit_str01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_str01",
+    "minimumLevel": 36
   },
   {
     "id": "item_equip_t2_parts_tundra01_edc_03",
@@ -489,6 +411,24 @@ export const wikiEquipment = [
     "imageId": "item_equip_t2_parts_tundra01_edc_03",
     "partTypeId": "2",
     "minimumLevel": 36
+  },
+  {
+    "id": "item_equip_t3_parts_tundra01_body_02",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_parts_tundra01_body_02",
+    "partTypeId": "0",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_edc_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_heal01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t2_parts_tundra01_edc_04",
@@ -508,6 +448,16 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_atb01_edc_06",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_edc_06",
+    "partTypeId": "2",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
     "id": "item_equip_t2_parts_tundra01_hand_02",
     "category": "equipment",
     "rarity": 3,
@@ -515,15 +465,6 @@ export const wikiEquipment = [
     "partTypeId": "1",
     "minimumLevel": 36,
     "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
   },
   {
     "id": "item_equip_t2_suit_agi01_body_01",
@@ -535,25 +476,6 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t4_suit_combo_cd01_edc_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_combo_cd01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_pulse_cryst01_body_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_pulse_cryst01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_pulse_cryst01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t2_suit_agi01_edc_01",
     "category": "equipment",
     "rarity": 3,
@@ -561,6 +483,33 @@ export const wikiEquipment = [
     "partTypeId": "2",
     "suitId": "suit_agi01",
     "minimumLevel": 36
+  },
+  {
+    "id": "item_equip_t4_suit_atb01_body_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_body_05",
+    "partTypeId": "0",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_poise01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_poise01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_poise01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_hand_04",
+    "partTypeId": "1",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t2_suit_agi01_edc_02",
@@ -581,6 +530,24 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_burst01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_burst01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_burst01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_body_06",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_body_06",
+    "partTypeId": "0",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
     "id": "item_equip_t2_suit_agi01_hand_01",
     "category": "equipment",
     "rarity": 3,
@@ -590,13 +557,32 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_edc_01",
+    "id": "item_equip_t4_suit_atb01_body_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_fire_natr01",
+    "imageId": "item_equip_t4_suit_atb01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeIII"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_hand_05",
+    "partTypeId": "1",
+    "suitId": "suit_usp02",
     "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t2_suit_str01_body_01",
+    "category": "equipment",
+    "rarity": 3,
+    "imageId": "item_equip_t2_suit_str01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_str01",
+    "minimumLevel": 36
   },
   {
     "id": "item_equip_t2_suit_str01_edc_01",
@@ -608,15 +594,6 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t4_suit_attri01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t2_suit_str01_edc_02",
     "category": "equipment",
     "rarity": 3,
@@ -626,42 +603,13 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t3_suit_str01_edc_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_str01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_str01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_body_04",
+    "id": "item_equip_t4_parts_wuling00_hand_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_body_04",
-    "partTypeId": "0",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t2_suit_str01_hand_01",
-    "category": "equipment",
-    "rarity": 3,
-    "imageId": "item_equip_t2_suit_str01_hand_01",
+    "imageId": "item_equip_t4_parts_wuling00_hand_02",
     "partTypeId": "1",
-    "suitId": "suit_str01",
-    "minimumLevel": 36
-  },
-  {
-    "id": "item_equip_t4_suit_burst01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_burst01",
-    "minimumLevel": 70
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
   },
   {
     "id": "item_equip_t2_suit_will01_body_01",
@@ -673,34 +621,6 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t3_suit_wisd01_body_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_wisd01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_wisd01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_parts_wuling00_body_05",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_body_05",
-    "partTypeId": "0",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_edc_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t2_suit_will01_edc_01",
     "category": "equipment",
     "rarity": 3,
@@ -710,13 +630,14 @@ export const wikiEquipment = [
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t4_parts_wuling00_edc_05",
+    "id": "item_equip_t3_suit_will01_edc_02",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_edc_05",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_will01_edc_02",
     "partTypeId": "2",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
+    "suitId": "suit_will01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t2_suit_will01_edc_02",
@@ -724,25 +645,6 @@ export const wikiEquipment = [
     "rarity": 3,
     "imageId": "item_equip_t2_suit_will01_edc_02",
     "partTypeId": "2",
-    "suitId": "suit_will01",
-    "minimumLevel": 36
-  },
-  {
-    "id": "item_equip_t3_suit_str01_hand_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_str01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_str01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t2_suit_will01_hand_01",
-    "category": "equipment",
-    "rarity": 3,
-    "imageId": "item_equip_t2_suit_will01_hand_01",
-    "partTypeId": "1",
     "suitId": "suit_will01",
     "minimumLevel": 36
   },
@@ -757,51 +659,32 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_burst01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_burst01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_body_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_body_03",
-    "partTypeId": "0",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t2_suit_wisd01_body_01",
+    "id": "item_equip_t2_suit_will01_hand_01",
     "category": "equipment",
     "rarity": 3,
-    "imageId": "item_equip_t2_suit_wisd01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_wisd01",
+    "imageId": "item_equip_t2_suit_will01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_will01",
     "minimumLevel": 36
   },
   {
-    "id": "item_equip_t4_suit_burst01_body_02",
+    "id": "item_equip_t3_suit_usp01_body_01",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_body_02",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_usp01_body_01",
     "partTypeId": "0",
-    "suitId": "suit_burst01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "suitId": "suit_usp01",
+    "minimumLevel": 50
   },
   {
-    "id": "item_equip_t4_suit_pulse_cryst01_edc_01",
+    "id": "item_equip_t4_suit_atk02_body_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_pulse_cryst01",
-    "minimumLevel": 70
+    "imageId": "item_equip_t4_suit_atk02_body_03",
+    "partTypeId": "0",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeII"
   },
   {
     "id": "item_equip_t2_suit_wisd01_edc_02",
@@ -814,6 +697,15 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_criti01_edc_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_criti01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70
+  },
+  {
     "id": "item_equip_t2_suit_wisd01_hand_01",
     "category": "equipment",
     "rarity": 3,
@@ -821,25 +713,6 @@ export const wikiEquipment = [
     "partTypeId": "1",
     "suitId": "suit_wisd01",
     "minimumLevel": 36
-  },
-  {
-    "id": "item_equip_t4_suit_heal01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_hand_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_hand_03",
-    "partTypeId": "1",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t3_parts_tundra01_body_01",
@@ -851,22 +724,22 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_phy01_edc_04",
+    "id": "item_equip_t3_suit_atk01_edc_04",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_atk01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_atk01",
+    "minimumLevel": 50
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_edc_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_edc_04",
+    "imageId": "item_equip_t4_suit_phy01_edc_02",
     "partTypeId": "2",
     "suitId": "suit_phy01",
     "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t3_parts_tundra01_body_02",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_parts_tundra01_body_02",
-    "partTypeId": "0",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t3_parts_tundra01_edc_01",
@@ -878,6 +751,15 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_pulse_cryst01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_pulse_cryst01",
+    "minimumLevel": 70
+  },
+  {
     "id": "item_equip_t3_parts_tundra01_edc_02",
     "category": "equipment",
     "rarity": 4,
@@ -885,6 +767,15 @@ export const wikiEquipment = [
     "partTypeId": "2",
     "minimumLevel": 50,
     "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_edc_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_03",
+    "partTypeId": "2",
+    "suitId": "suit_pulse_cryst01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t3_parts_tundra01_edc_03",
@@ -896,10 +787,10 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_parts_wuling01_edc_02",
+    "id": "item_equip_t4_parts_wuling01_edc_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_edc_02",
+    "imageId": "item_equip_t4_parts_wuling01_edc_04",
     "partTypeId": "2",
     "minimumLevel": 70,
     "modelKey": "refinement.modelTypeI"
@@ -914,14 +805,6 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_parts_wuling01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_edc_03",
-    "partTypeId": "2",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t3_parts_tundra01_hand_01",
     "category": "equipment",
     "rarity": 4,
@@ -929,6 +812,54 @@ export const wikiEquipment = [
     "partTypeId": "1",
     "minimumLevel": 50,
     "modelKey": "refinement.modelTypeII"
+  },
+  {
+    "id": "item_equip_t4_suit_criti01_edc_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_criti01_edc_05",
+    "partTypeId": "2",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_body_03",
+    "partTypeId": "0",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t3_suit_agi01_body_01",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_agi01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_agi01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t3_suit_atk01_edc_02",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_atk01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_atk01",
+    "minimumLevel": 50
+  },
+  {
+    "id": "item_equip_t4_suit_atb01_body_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_body_03",
+    "partTypeId": "0",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t3_suit_agi01_edc_01",
@@ -941,15 +872,6 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_atk02_body_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atk02_body_04",
-    "partTypeId": "0",
-    "suitId": "suit_atk02",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t3_suit_agi01_edc_02",
     "category": "equipment",
     "rarity": 4,
@@ -960,13 +882,23 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeII"
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_hand_01",
+    "id": "item_equip_t4_suit_atk02_body_05",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_fire_natr01",
+    "imageId": "item_equip_t4_suit_atk02_body_05",
+    "partTypeId": "0",
+    "suitId": "suit_atk02",
     "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t3_suit_agi01_edc_03",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_agi01_edc_03",
+    "partTypeId": "2",
+    "suitId": "suit_agi01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t3_suit_agi01_hand_01",
@@ -979,15 +911,6 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_pulse_cryst01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_pulse_cryst01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t3_suit_atk01_body_01",
     "category": "equipment",
     "rarity": 4,
@@ -995,15 +918,6 @@ export const wikiEquipment = [
     "partTypeId": "0",
     "suitId": "suit_atk01",
     "minimumLevel": 50
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_edc_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70
   },
   {
     "id": "item_equip_t3_suit_atk01_body_02",
@@ -1016,12 +930,12 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_heal01_edc_01",
+    "id": "item_equip_t4_suit_pulse_cryst01_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_heal01",
+    "imageId": "item_equip_t4_suit_pulse_cryst01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_pulse_cryst01",
     "minimumLevel": 70
   },
   {
@@ -1032,15 +946,6 @@ export const wikiEquipment = [
     "partTypeId": "0",
     "suitId": "suit_atk01",
     "minimumLevel": 50
-  },
-  {
-    "id": "item_equip_t4_parts_wuling00_edc_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_generaltype",
-    "minimumLevel": 60
   },
   {
     "id": "item_equip_t3_suit_atk01_body_04",
@@ -1072,13 +977,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t3_suit_atk01_edc_04",
+    "id": "item_equip_t4_suit_phy01_edc_03",
     "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_atk01_edc_04",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_edc_03",
     "partTypeId": "2",
-    "suitId": "suit_atk01",
-    "minimumLevel": 50
+    "suitId": "suit_phy01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t3_suit_atk01_edc_05",
@@ -1090,12 +995,21 @@ export const wikiEquipment = [
     "minimumLevel": 50
   },
   {
-    "id": "item_equip_t4_suit_crush_fracture_edc_01",
+    "id": "item_equip_t4_parts_wuling00_body_06",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_crush_fracture_edc_01",
+    "imageId": "item_equip_t4_parts_wuling00_body_06",
+    "partTypeId": "0",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_edc_01",
     "partTypeId": "2",
-    "suitId": "suit_crush_fracture",
+    "suitId": "suit_phy01",
     "minimumLevel": 70
   },
   {
@@ -1109,12 +1023,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_parts_wuling01_body_02",
+    "id": "item_equip_t4_parts_wuling00_hand_06",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_body_02",
-    "partTypeId": "0",
-    "minimumLevel": 70
+    "imageId": "item_equip_t4_parts_wuling00_hand_06",
+    "partTypeId": "1",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
   },
   {
     "id": "item_equip_t3_suit_atk01_hand_01",
@@ -1123,25 +1038,6 @@ export const wikiEquipment = [
     "imageId": "item_equip_t3_suit_atk01_hand_01",
     "partTypeId": "1",
     "suitId": "suit_atk01",
-    "minimumLevel": 50
-  },
-  {
-    "id": "item_equip_t3_suit_str01_hand_02",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_str01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_str01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeII"
-  },
-  {
-    "id": "item_equip_t3_suit_usp01_hand_01",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_usp01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_usp01",
     "minimumLevel": 50
   },
   {
@@ -1155,13 +1051,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_criti01_edc_06",
+    "id": "item_equip_t3_suit_str01_edc_01",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_edc_06",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_str01_edc_01",
     "partTypeId": "2",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70,
+    "suitId": "suit_str01",
+    "minimumLevel": 50,
     "modelKey": "refinement.modelTypeI"
   },
   {
@@ -1175,13 +1071,24 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_edc_02",
+    "id": "item_equip_t3_suit_str01_hand_01",
     "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_fire_natr01",
-    "minimumLevel": 70
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_str01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_str01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t3_suit_str01_hand_02",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_str01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_str01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeII"
   },
   {
     "id": "item_equip_t3_suit_usp01_body_02",
@@ -1194,21 +1101,14 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_parts_wuling02_hand_02",
+    "id": "item_equip_t4_suit_atk02_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling02_hand_02",
-    "partTypeId": "1",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_edc_06",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_06",
-    "partTypeId": "2",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
+    "imageId": "item_equip_t4_suit_atk02_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t3_suit_usp01_edc_01",
@@ -1220,14 +1120,12 @@ export const wikiEquipment = [
     "minimumLevel": 50
   },
   {
-    "id": "item_equip_t4_suit_attri01_edc_06",
+    "id": "item_equip_t4_parts_wuling01_hand_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_edc_06",
-    "partTypeId": "2",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "imageId": "item_equip_t4_parts_wuling01_hand_02",
+    "partTypeId": "1",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t3_suit_usp01_edc_02",
@@ -1249,6 +1147,43 @@ export const wikiEquipment = [
     "minimumLevel": 50
   },
   {
+    "id": "item_equip_t4_suit_usp02_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t3_suit_usp01_hand_01",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_usp01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_usp01",
+    "minimumLevel": 50
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling00_body_03",
+    "partTypeId": "0",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
+  },
+  {
+    "id": "item_equip_t4_suit_atb01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
     "id": "item_equip_t3_suit_will01_body_01",
     "category": "equipment",
     "rarity": 4,
@@ -1259,24 +1194,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t3_suit_will01_edc_02",
-    "category": "equipment",
-    "rarity": 4,
-    "imageId": "item_equip_t3_suit_will01_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_will01",
-    "minimumLevel": 50,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_body_02",
+    "id": "item_equip_t4_parts_wuling00_hand_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_body_03",
-    "partTypeId": "0",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "imageId": "item_equip_t4_parts_wuling00_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
   },
   {
     "id": "item_equip_t3_suit_will01_hand_01",
@@ -1289,12 +1213,22 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_body_01",
+    "id": "item_equip_t3_suit_wisd01_body_01",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_wisd01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_wisd01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_burst01_body_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_body_01",
+    "imageId": "item_equip_t4_suit_burst01_body_01",
     "partTypeId": "0",
-    "suitId": "suit_fire_natr01",
+    "suitId": "suit_burst01",
     "minimumLevel": 70
   },
   {
@@ -1308,12 +1242,31 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeII"
   },
   {
-    "id": "item_equip_t4_suit_usp02_edc_01",
+    "id": "item_equip_t3_suit_wisd01_edc_01",
+    "category": "equipment",
+    "rarity": 4,
+    "imageId": "item_equip_t3_suit_wisd01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_wisd01",
+    "minimumLevel": 50,
+    "modelKey": "refinement.modelTypeII"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling01_edc_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_01",
+    "imageId": "item_equip_t4_parts_wuling01_edc_02",
     "partTypeId": "2",
-    "suitId": "suit_usp02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_attri01_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_body_04",
+    "partTypeId": "0",
+    "suitId": "suit_attri01",
     "minimumLevel": 70
   },
   {
@@ -1327,6 +1280,16 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_atb01_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atb01_body_04",
+    "partTypeId": "0",
+    "suitId": "suit_atb01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeII"
+  },
+  {
     "id": "item_equip_t3_suit_wisd01_hand_01",
     "category": "equipment",
     "rarity": 4,
@@ -1335,6 +1298,24 @@ export const wikiEquipment = [
     "suitId": "suit_wisd01",
     "minimumLevel": 50,
     "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_parts_wuling00_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling00_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
+  },
+  {
+    "id": "item_equip_t4_suit_attri01_edc_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_edc_06",
+    "partTypeId": "2",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_parts_wuling00_body_02",
@@ -1346,29 +1327,39 @@ export const wikiEquipment = [
     "minimumLevel": 60
   },
   {
-    "id": "item_equip_t4_parts_wuling01_body_01",
+    "id": "item_equip_t4_suit_fire_natr01_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_body_01",
+    "imageId": "item_equip_t4_suit_fire_natr01_body_02",
     "partTypeId": "0",
+    "suitId": "suit_fire_natr01",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_parts_wuling00_body_03",
+    "id": "item_equip_t4_parts_wuling00_body_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_body_03",
+    "imageId": "item_equip_t4_parts_wuling00_body_04",
     "partTypeId": "0",
     "suitId": "suit_generaltype",
     "minimumLevel": 60
   },
   {
-    "id": "item_equip_t4_suit_crush_fracture_hand_01",
+    "id": "item_equip_t4_parts_wuling00_body_05",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_crush_fracture_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_crush_fracture",
+    "imageId": "item_equip_t4_parts_wuling00_body_05",
+    "partTypeId": "0",
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_fire_natr01",
     "minimumLevel": 70
   },
   {
@@ -1399,22 +1390,22 @@ export const wikiEquipment = [
     "minimumLevel": 60
   },
   {
-    "id": "item_equip_t4_parts_wuling00_hand_02",
+    "id": "item_equip_t4_parts_wuling00_edc_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling00_hand_02",
-    "partTypeId": "1",
+    "imageId": "item_equip_t4_parts_wuling00_edc_04",
+    "partTypeId": "2",
     "suitId": "suit_generaltype",
     "minimumLevel": 60
   },
   {
-    "id": "item_equip_t4_suit_expend_spell01_edc_02",
+    "id": "item_equip_t4_parts_wuling00_edc_06",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_expend_spell01_edc_02",
+    "imageId": "item_equip_t4_parts_wuling00_edc_06",
     "partTypeId": "2",
-    "suitId": "suit_expend_spell01",
-    "minimumLevel": 70
+    "suitId": "suit_generaltype",
+    "minimumLevel": 60
   },
   {
     "id": "item_equip_t4_parts_wuling00_hand_03",
@@ -1444,6 +1435,41 @@ export const wikiEquipment = [
     "minimumLevel": 60
   },
   {
+    "id": "item_equip_t4_parts_wuling01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling01_body_01",
+    "partTypeId": "0",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_attri01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling01_body_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling01_body_02",
+    "partTypeId": "0",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_attri01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_attri01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
     "id": "item_equip_t4_parts_wuling01_edc_01",
     "category": "equipment",
     "rarity": 5,
@@ -1452,13 +1478,29 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_parts_wuling01_edc_04",
+    "id": "item_equip_t4_parts_wuling02_hand_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_edc_04",
+    "imageId": "item_equip_t4_parts_wuling02_hand_01",
+    "partTypeId": "1",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_01",
     "partTypeId": "2",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "suitId": "suit_pulse_cryst01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling01_edc_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling01_edc_03",
+    "partTypeId": "2",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_parts_wuling01_hand_01",
@@ -1466,32 +1508,6 @@ export const wikiEquipment = [
     "rarity": 5,
     "imageId": "item_equip_t4_parts_wuling01_hand_01",
     "partTypeId": "1",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_combo_cd01_body_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_combo_cd01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_parts_wuling01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling01_hand_02",
-    "partTypeId": "1",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_phy01",
     "minimumLevel": 70
   },
   {
@@ -1503,15 +1519,6 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_hand_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_hand_04",
-    "partTypeId": "1",
-    "suitId": "suit_fire_natr01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t4_parts_wuling02_body_02",
     "category": "equipment",
     "rarity": 5,
@@ -1520,24 +1527,56 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_hand_03",
+    "id": "item_equip_t4_suit_attri01_edc_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_hand_03",
-    "partTypeId": "1",
-    "suitId": "suit_fire_natr01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "imageId": "item_equip_t4_suit_attri01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_usp02_hand_02",
+    "id": "item_equip_t4_suit_combo_cd01_edc_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_hand_01",
+    "imageId": "item_equip_t4_suit_combo_cd01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_combo_cd01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_body_03",
+    "partTypeId": "0",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_combo_cd01_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_combo_cd01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_combo_cd01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_hand_01",
     "partTypeId": "1",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "suitId": "suit_pulse_cryst01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_body_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_body_04",
+    "partTypeId": "0",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_parts_wuling02_edc_01",
@@ -1548,10 +1587,81 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_parts_wuling02_hand_01",
+    "id": "item_equip_t4_suit_atk02_edc_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_parts_wuling02_hand_01",
+    "imageId": "item_equip_t4_suit_atk02_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_edc_02",
+    "partTypeId": "2",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_atk02_edc_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atk02_edc_05",
+    "partTypeId": "2",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_07",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_07",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_hand_02",
+    "partTypeId": "1",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_hand_03",
+    "partTypeId": "1",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_burst01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_burst01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_burst01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_parts_wuling02_hand_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_parts_wuling02_hand_04",
     "partTypeId": "1",
     "minimumLevel": 70
   },
@@ -1565,61 +1675,32 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_atb01_body_03",
+    "id": "item_equip_t4_suit_atb01_edc_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_body_04",
-    "partTypeId": "0",
+    "imageId": "item_equip_t4_suit_atb01_edc_01",
+    "partTypeId": "2",
     "suitId": "suit_atb01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_heal01",
     "minimumLevel": 70,
     "modelKey": "refinement.modelTypeII"
   },
   {
-    "id": "item_equip_t4_suit_atk02_edc_05",
+    "id": "item_equip_t4_suit_atb01_edc_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_atk02_edc_05",
-    "partTypeId": "2",
-    "suitId": "suit_atk02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_body_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_body_01",
-    "partTypeId": "0",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_body_05",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_body_05",
-    "partTypeId": "0",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_fire_natr01_body_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_fire_natr01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_edc_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_edc_02",
+    "imageId": "item_equip_t4_suit_atb01_edc_03",
     "partTypeId": "2",
     "suitId": "suit_atb01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_atb01_edc_04",
@@ -1640,63 +1721,6 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_poise01_edc_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_poise01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_edc_06",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_edc_06",
-    "partTypeId": "2",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_attri01_body_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_body_04",
-    "partTypeId": "0",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_poise01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_poise01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_atb01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atb01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_atb01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_atk02_edc_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_atk02_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_atk02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
     "id": "item_equip_t4_suit_atk02_body_01",
     "category": "equipment",
     "rarity": 5,
@@ -1706,23 +1730,31 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_usp02_body_03",
+    "id": "item_equip_t4_suit_spellburst_edc_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_body_03",
-    "partTypeId": "0",
-    "suitId": "suit_usp02",
+    "imageId": "item_equip_t4_suit_spellburst_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_spellburst",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_atk02_body_03",
+    "id": "item_equip_t4_suit_atk02_body_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_atk02_body_03",
+    "imageId": "item_equip_t4_suit_atk02_body_04",
     "partTypeId": "0",
     "suitId": "suit_atk02",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeII"
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_edc_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_phy01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_atk02_edc_01",
@@ -1731,6 +1763,24 @@ export const wikiEquipment = [
     "imageId": "item_equip_t4_suit_atk02_edc_01",
     "partTypeId": "2",
     "suitId": "suit_atk02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_poise01_edc_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_poise01_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_poise01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_03",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
     "minimumLevel": 70
   },
   {
@@ -1744,10 +1794,38 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeII"
   },
   {
+    "id": "item_equip_t4_suit_usp02_edc_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_05",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
     "id": "item_equip_t4_suit_atk02_edc_04",
     "category": "equipment",
     "rarity": 5,
     "imageId": "item_equip_t4_suit_atk02_edc_04",
+    "partTypeId": "2",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_06",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_06",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_atk02_edc_06",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atk02_edc_06",
     "partTypeId": "2",
     "suitId": "suit_atk02",
     "minimumLevel": 70
@@ -1762,14 +1840,23 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_usp02_edc_02",
+    "id": "item_equip_t4_suit_criti01_body_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_usp02",
+    "imageId": "item_equip_t4_suit_criti01_body_04",
+    "partTypeId": "0",
+    "suitId": "suit_criti01",
     "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "modelKey": "refinement.modelTypeII"
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_body_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_body_04",
+    "partTypeId": "0",
+    "suitId": "suit_phy01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_atk02_hand_02",
@@ -1782,6 +1869,34 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_phy01_body_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_body_03",
+    "partTypeId": "0",
+    "suitId": "suit_phy01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_atk02_hand_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_atk02_hand_03",
+    "partTypeId": "1",
+    "suitId": "suit_atk02",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_body_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_phy01",
+    "minimumLevel": 70
+  },
+  {
     "id": "item_equip_t4_suit_attri01_body_01",
     "category": "equipment",
     "rarity": 5,
@@ -1789,36 +1904,6 @@ export const wikiEquipment = [
     "partTypeId": "0",
     "suitId": "suit_attri01",
     "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_criti01_hand_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_hand_03",
-    "partTypeId": "1",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_attri01_body_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_attri01_body_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_body_04",
-    "partTypeId": "0",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t4_suit_attri01_body_05",
@@ -1831,41 +1916,34 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeII"
   },
   {
-    "id": "item_equip_t4_suit_combo_cd01_hand_02",
+    "id": "item_equip_t4_suit_attri01_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_combo_cd01",
-    "minimumLevel": 70
+    "imageId": "item_equip_t4_suit_attri01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_attri01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_attri01_edc_02",
+    "id": "item_equip_t4_suit_attri01_edc_05",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_edc_02",
+    "imageId": "item_equip_t4_suit_attri01_edc_05",
     "partTypeId": "2",
     "suitId": "suit_attri01",
     "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeII"
+    "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_attri01_edc_04",
+    "id": "item_equip_t4_suit_attri01_edc_06",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_edc_04",
+    "imageId": "item_equip_t4_suit_attri01_edc_06",
     "partTypeId": "2",
     "suitId": "suit_attri01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_poise01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_poise01",
-    "minimumLevel": 70
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t4_suit_attri01_edc_07",
@@ -1878,25 +1956,6 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeII"
   },
   {
-    "id": "item_equip_t4_suit_attri01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_attri01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_attri01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
-  },
-  {
-    "id": "item_equip_t4_suit_fire_natr01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_hand_02",
-    "partTypeId": "1",
-    "suitId": "suit_fire_natr01",
-    "minimumLevel": 70
-  },
-  {
     "id": "item_equip_t4_suit_attri01_hand_03",
     "category": "equipment",
     "rarity": 5,
@@ -1906,12 +1965,22 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_burst01_body_01",
+    "id": "item_equip_t4_suit_burst01_body_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_body_01",
+    "imageId": "item_equip_t4_suit_burst01_body_02",
     "partTypeId": "0",
     "suitId": "suit_burst01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_combo_cd01_body_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_combo_cd01_body_02",
+    "partTypeId": "0",
+    "suitId": "suit_combo_cd01",
     "minimumLevel": 70
   },
   {
@@ -1924,47 +1993,39 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_burst01_edc_01",
+    "id": "item_equip_t4_suit_burst01_edc_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_edc_01",
+    "imageId": "item_equip_t4_suit_burst01_edc_03",
     "partTypeId": "2",
+    "suitId": "suit_burst01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_burst01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_burst01_hand_01",
+    "partTypeId": "1",
     "suitId": "suit_burst01",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_burst01_edc_02",
+    "id": "item_equip_t4_suit_usp02_body_05",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_burst01_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_burst01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_combo_cd01_body_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_body_02",
+    "imageId": "item_equip_t4_suit_usp02_body_05",
     "partTypeId": "0",
-    "suitId": "suit_combo_cd01",
+    "suitId": "suit_usp02",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_combo_cd01_edc_01",
+    "id": "item_equip_t4_suit_combo_cd01_body_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_combo_cd01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_combo_cd01_edc_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_combo_cd01_edc_02",
-    "partTypeId": "2",
+    "imageId": "item_equip_t4_suit_combo_cd01_body_01",
+    "partTypeId": "0",
     "suitId": "suit_combo_cd01",
     "minimumLevel": 70
   },
@@ -1978,12 +2039,31 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_pulse_cryst01_edc_02",
+    "id": "item_equip_t4_suit_combo_cd01_edc_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_pulse_cryst01_edc_02",
+    "imageId": "item_equip_t4_suit_combo_cd01_edc_04",
     "partTypeId": "2",
+    "suitId": "suit_combo_cd01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_hand_02",
+    "partTypeId": "1",
     "suitId": "suit_pulse_cryst01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_combo_cd01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_combo_cd01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_combo_cd01",
     "minimumLevel": 70
   },
   {
@@ -1996,23 +2076,33 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_criti01_body_02",
+    "id": "item_equip_t4_suit_criti01_body_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_body_02",
-    "partTypeId": "0",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_criti01_body_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_body_04",
+    "imageId": "item_equip_t4_suit_criti01_body_03",
     "partTypeId": "0",
     "suitId": "suit_criti01",
     "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeII"
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_criti01_body_06",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_criti01_body_06",
+    "partTypeId": "0",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_criti01_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_criti01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_criti01_edc_02",
@@ -2033,32 +2123,32 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_criti01_edc_04",
+    "id": "item_equip_t4_suit_criti01_edc_06",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_criti01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_phy01_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_phy01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_criti01_edc_05",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_criti01_edc_05",
+    "imageId": "item_equip_t4_suit_criti01_edc_06",
     "partTypeId": "2",
     "suitId": "suit_criti01",
     "minimumLevel": 70,
     "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_poise01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_poise01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_poise01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_criti01_hand_01",
@@ -2077,6 +2167,16 @@ export const wikiEquipment = [
     "partTypeId": "1",
     "suitId": "suit_criti01",
     "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_criti01_hand_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_criti01_hand_03",
+    "partTypeId": "1",
+    "suitId": "suit_criti01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t4_suit_criti01_hand_04",
@@ -2108,6 +2208,15 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
+    "id": "item_equip_t4_suit_crush_fracture_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_crush_fracture_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_crush_fracture",
+    "minimumLevel": 70
+  },
+  {
     "id": "item_equip_t4_suit_crush_fracture_edc_02",
     "category": "equipment",
     "rarity": 5,
@@ -2118,14 +2227,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_crush_fracture_hand_02",
+    "id": "item_equip_t4_suit_usp02_hand_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_crush_fracture_hand_02",
+    "imageId": "item_equip_t4_suit_usp02_hand_03",
     "partTypeId": "1",
-    "suitId": "suit_crush_fracture",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
+    "suitId": "suit_usp02",
+    "minimumLevel": 70
   },
   {
     "id": "item_equip_t4_suit_expend_spell01_body_02",
@@ -2134,6 +2242,43 @@ export const wikiEquipment = [
     "imageId": "item_equip_t4_suit_expend_spell01_body_02",
     "partTypeId": "0",
     "suitId": "suit_expend_spell01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_expend_spell01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_expend_spell01_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_expend_spell01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_edc_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_heal01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_edc_05",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_heal01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_heal01",
     "minimumLevel": 70
   },
   {
@@ -2146,10 +2291,19 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_fire_natr01_edc_03",
+    "id": "item_equip_t4_suit_fire_natr01_edc_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_fire_natr01_edc_03",
+    "imageId": "item_equip_t4_suit_fire_natr01_edc_01",
+    "partTypeId": "2",
+    "suitId": "suit_fire_natr01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_edc_02",
     "partTypeId": "2",
     "suitId": "suit_fire_natr01",
     "minimumLevel": 70
@@ -2161,6 +2315,52 @@ export const wikiEquipment = [
     "imageId": "item_equip_t4_suit_fire_natr01_edc_04",
     "partTypeId": "2",
     "suitId": "suit_fire_natr01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_hand_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_hand_01",
+    "partTypeId": "1",
+    "suitId": "suit_fire_natr01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_hand_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_fire_natr01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_hand_03",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_hand_03",
+    "partTypeId": "1",
+    "suitId": "suit_fire_natr01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_fire_natr01_hand_04",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_fire_natr01_hand_04",
+    "partTypeId": "1",
+    "suitId": "suit_fire_natr01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_heal01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_heal01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_heal01",
     "minimumLevel": 70
   },
   {
@@ -2183,51 +2383,13 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_heal01_edc_02",
+    "id": "item_equip_t4_suit_spellburst_hand_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_edc_02",
-    "partTypeId": "2",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeII"
-  },
-  {
-    "id": "item_equip_t4_suit_heal01_edc_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_edc_03",
-    "partTypeId": "2",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_poise01_hand_02",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_hand_02",
+    "imageId": "item_equip_t4_suit_spellburst_hand_01",
     "partTypeId": "1",
-    "suitId": "suit_poise01",
+    "suitId": "suit_spellburst",
     "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_heal01_edc_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_edc_04",
-    "partTypeId": "2",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_heal01_edc_05",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_heal01_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_heal01",
-    "minimumLevel": 70,
-    "modelKey": "refinement.modelTypeI"
   },
   {
     "id": "item_equip_t4_suit_heal01_hand_01",
@@ -2249,30 +2411,49 @@ export const wikiEquipment = [
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_phy01_body_04",
+    "id": "item_equip_t4_suit_phy01_hand_02",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_body_04",
+    "imageId": "item_equip_t4_suit_phy01_hand_02",
+    "partTypeId": "1",
+    "suitId": "suit_phy01",
+    "minimumLevel": 70
+  },
+  {
+    "id": "item_equip_t4_suit_phy01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_phy01_body_01",
     "partTypeId": "0",
     "suitId": "suit_phy01",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_phy01_edc_02",
+    "id": "item_equip_t4_suit_phy01_hand_01",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_edc_02",
-    "partTypeId": "2",
+    "imageId": "item_equip_t4_suit_phy01_hand_01",
+    "partTypeId": "1",
     "suitId": "suit_phy01",
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_phy01_edc_03",
+    "id": "item_equip_t4_suit_phy01_hand_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_phy01_edc_03",
-    "partTypeId": "2",
+    "imageId": "item_equip_t4_suit_phy01_hand_03",
+    "partTypeId": "1",
     "suitId": "suit_phy01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_poise01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_poise01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_poise01",
     "minimumLevel": 70
   },
   {
@@ -2285,12 +2466,32 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_poise01_edc_02",
+    "id": "item_equip_t4_suit_poise01_edc_03",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_poise01_edc_02",
+    "imageId": "item_equip_t4_suit_poise01_edc_03",
     "partTypeId": "2",
     "suitId": "suit_poise01",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_usp02_edc_02",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_usp02_edc_02",
+    "partTypeId": "2",
+    "suitId": "suit_usp02",
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
+  },
+  {
+    "id": "item_equip_t4_suit_pulse_cryst01_body_01",
+    "category": "equipment",
+    "rarity": 5,
+    "imageId": "item_equip_t4_suit_pulse_cryst01_body_01",
+    "partTypeId": "0",
+    "suitId": "suit_pulse_cryst01",
     "minimumLevel": 70
   },
   {
@@ -2303,67 +2504,23 @@ export const wikiEquipment = [
     "minimumLevel": 70
   },
   {
-    "id": "item_equip_t4_suit_spellburst_edc_01",
+    "id": "item_equip_t4_suit_usp02_body_04",
     "category": "equipment",
     "rarity": 5,
-    "imageId": "item_equip_t4_suit_spellburst_edc_01",
-    "partTypeId": "2",
-    "suitId": "suit_spellburst",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_spellburst_hand_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_spellburst_hand_01",
-    "partTypeId": "1",
-    "suitId": "suit_spellburst",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_body_01",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_body_01",
+    "imageId": "item_equip_t4_suit_usp02_body_04",
     "partTypeId": "0",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_edc_05",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_edc_05",
-    "partTypeId": "2",
     "suitId": "suit_usp02",
     "minimumLevel": 70,
     "modelKey": "refinement.modelTypeI"
   },
   {
-    "id": "item_equip_t4_suit_usp02_hand_01",
+    "id": "item_equip_t4_suit_usp02_hand_02",
     "category": "equipment",
     "rarity": 5,
     "imageId": "item_equip_t4_suit_usp02_hand_01",
     "partTypeId": "1",
     "suitId": "suit_usp02",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_hand_03",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_hand_03",
-    "partTypeId": "1",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
-  },
-  {
-    "id": "item_equip_t4_suit_usp02_hand_04",
-    "category": "equipment",
-    "rarity": 5,
-    "imageId": "item_equip_t4_suit_usp02_hand_04",
-    "partTypeId": "1",
-    "suitId": "suit_usp02",
-    "minimumLevel": 70
+    "minimumLevel": 70,
+    "modelKey": "refinement.modelTypeI"
   }
 ] satisfies WikiEquipmentSummary[]

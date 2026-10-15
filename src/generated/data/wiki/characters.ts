@@ -506,5 +506,21 @@ export const wikiCharacters = [
       "month": 7,
       "day": 27
     }
+  },
+  {
+    "id": "chr_0036_jsspsi",
+    "category": "characters",
+    "rarity": 6,
+    "imageId": "chr_0036_jsspsi",
+    "elementId": "Cryst",
+    "professionId": "4",
+    "factionId": "ENDFIELD INDUSTRIES",
+    "weaponTypeId": "3",
+    "mainAttributeId": "41",
+    "subAttributeId": "39",
+    "birthday": {
+      "month": 9,
+      "day": 15
+    }
   }
 ] satisfies WikiCharacterSummary[]

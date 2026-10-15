@@ -13,7 +13,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -25,11 +41,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -41,6 +61,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -49,11 +73,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -69,23 +93,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -98,16 +106,32 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_pistol_0004",
+    "id": "wpn_lance_0004",
     "category": "weapons",
     "rarity": 5,
-    "imageId": "wpn_pistol_0004",
-    "weaponTypeId": "6",
+    "imageId": "wpn_lance_0004",
+    "weaponTypeId": "5",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -119,11 +143,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -135,6 +163,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -143,11 +175,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -163,11 +195,49 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_lance_0004"
+      }
+    ]
+  },
+  {
+    "id": "wpn_lance_0008",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_lance_0008",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_5_1"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
@@ -175,15 +245,63 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
+        "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
         "sourceId": "weponbox_1_4_1"
       },
       {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
         "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_pistol_0004"
+        "sourceId": "constant_payshop_wpn_lance_0008"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "shop_common_wpn_lance_0008"
       }
     ]
   },
@@ -197,6 +315,10 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_1"
       },
       {
@@ -205,11 +327,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weaponbox_constant_4"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -220,20 +346,16 @@ export const wikiWeapons = [
         "sourceId": "weponbox_1_2_3"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_5_3"
-      },
-      {
         "categoryId": "shop",
         "sourceId": "payshop_purple_wpn_claym_0004"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_1_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
       },
       {
         "categoryId": "chest",
@@ -241,7 +363,19 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
+      },
+      {
+        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_common_advlevel"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
       },
       {
         "categoryId": "chest",
@@ -254,194 +388,6 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0008",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_funnel_0010",
-    "weaponTypeId": "2",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_funnel_0008"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_funnel_0008"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_common_advlevel"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0014",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_sword_0014",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_sword_0014"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_2_7"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_common_advlevel"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
       }
     ]
   },
@@ -455,7 +401,15 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -463,11 +417,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
+        "sourceId": "weponbox_1_1_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_1"
       },
       {
         "categoryId": "gacha",
@@ -478,16 +432,20 @@ export const wikiWeapons = [
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
         "categoryId": "shop",
         "sourceId": "payshop_purple_wpn_claym_0006"
       },
       {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_claym_0006"
+        "sourceId": "weekly_payshop_wpn_6_1_3_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
       },
       {
         "categoryId": "chest",
@@ -499,7 +457,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
       },
       {
         "categoryId": "chest",
@@ -507,19 +465,59 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
-      },
-      {
-        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_funnel_0019",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_funnel_0019",
+    "weaponTypeId": "2",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      }
+    ]
+  },
+  {
+    "id": "wpn_lance_0007",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_lance_0007",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -542,28 +540,24 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_sword_0011",
+    "id": "wpn_funnel_0014",
     "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_sword_0011",
-    "weaponTypeId": "1",
+    "rarity": 5,
+    "imageId": "wpn_funnel_0014",
+    "weaponTypeId": "2",
     "maxLevel": 90,
     "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
       {
         "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_1_1"
       },
       {
         "categoryId": "gacha",
@@ -571,39 +565,75 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_1_2"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_sword_0011"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+        "sourceId": "weekly_payshop_wpn_funnel_0014"
       }
     ]
   },
@@ -617,11 +647,27 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
       },
       {
         "categoryId": "gacha",
@@ -633,23 +679,35 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_4_3"
+        "sourceId": "weekly_payshop_wpn_6_1_6_6"
       },
       {
         "categoryId": "shop",
         "sourceId": "payshop_purple_wpn_claym_0008"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
       },
       {
         "categoryId": "chest",
@@ -673,57 +731,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0010",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_sword_0010",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "battlePass",
-        "sourceId": "item_obtain_bp"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_6"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
       }
     ]
   },
@@ -737,7 +745,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -749,11 +773,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -765,6 +793,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -773,11 +805,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -793,23 +825,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -818,6 +834,24 @@ export const wikiWeapons = [
       {
         "categoryId": "shop",
         "sourceId": "shop_common_wpn_claym_0009"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0011",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_pistol_0011",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
       }
     ]
   },
@@ -845,7 +879,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -857,11 +907,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -873,6 +927,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -881,11 +939,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -901,27 +959,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
         "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_claym_0011"
+        "sourceId": "weekly_payshop_wpn_5_1_5_5"
       },
       {
         "categoryId": "shop",
@@ -939,7 +981,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -951,11 +1009,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -967,6 +1029,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -975,11 +1041,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -995,27 +1061,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
         "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_claym_0012"
+        "sourceId": "weekly_payshop_wpn_5_1_6_4"
       },
       {
         "categoryId": "shop",
@@ -1042,40 +1092,16 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_pistol_0005",
+    "id": "wpn_pistol_0001",
     "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_pistol_0005",
+    "rarity": 3,
+    "imageId": "wpn_pistol_0001",
     "weaponTypeId": "6",
     "maxLevel": 90,
     "acquisitionSources": [
       {
-        "categoryId": "battlePass",
-        "sourceId": "item_obtain_bp"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_6"
+        "categoryId": "explore",
+        "sourceId": "item_obtain_explore"
       }
     ]
   },
@@ -1089,7 +1115,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1101,11 +1143,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1117,6 +1163,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1125,11 +1175,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1145,117 +1195,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
         "sourceId": "daily_payshop_wpn_claym_0014"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0020",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0020",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_sword_0020"
       }
     ]
   },
@@ -1269,7 +1213,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1281,11 +1241,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1297,6 +1261,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1305,11 +1273,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1325,23 +1293,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -1372,20 +1324,24 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
   {
-    "id": "wpn_sword_0022",
+    "id": "wpn_funnel_0016",
     "category": "weapons",
     "rarity": 6,
-    "imageId": "wpn_sword_0022",
-    "weaponTypeId": "1",
+    "imageId": "wpn_funnel_0016",
+    "weaponTypeId": "2",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_4_1"
       }
     ]
   },
@@ -1404,56 +1360,98 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_sword_0021",
+    "id": "wpn_funnel_0017",
     "category": "weapons",
     "rarity": 6,
-    "imageId": "wpn_sword_0021",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_sword_0021"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_sword_0021"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0023",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0023",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "activity",
-        "sourceId": "item_obtain_activity"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0001",
-    "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_funnel_0001",
+    "imageId": "wpn_funnel_0017",
     "weaponTypeId": "2",
     "maxLevel": 90,
     "acquisitionSources": [
       {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
+      }
+    ]
+  },
+  {
+    "id": "wpn_claym_0018",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_claym_0018",
+    "weaponTypeId": "3",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      }
+    ]
+  },
+  {
+    "id": "wpn_claym_0019",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_claym_0019",
+    "weaponTypeId": "3",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0012",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_pistol_0012",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
         "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1465,11 +1463,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1481,6 +1483,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1489,11 +1495,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1509,11 +1515,49 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_pistol_0012"
+      }
+    ]
+  },
+  {
+    "id": "wpn_funnel_0001",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_funnel_0001",
+    "weaponTypeId": "2",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_5_1"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
@@ -1521,11 +1565,55 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
+        "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
         "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
       },
       {
         "categoryId": "shop",
@@ -1538,16 +1626,120 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_pistol_0011",
+    "id": "wpn_lance_0011",
     "category": "weapons",
     "rarity": 6,
-    "imageId": "wpn_pistol_0011",
-    "weaponTypeId": "6",
+    "imageId": "wpn_lance_0011",
+    "weaponTypeId": "5",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_4_2"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_lance_0011"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_common_advlevel"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
       }
     ]
   },
@@ -1575,7 +1767,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1587,11 +1795,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1603,6 +1815,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1611,11 +1827,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1631,23 +1847,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -1656,6 +1856,24 @@ export const wikiWeapons = [
       {
         "categoryId": "shop",
         "sourceId": "shop_common_wpn_funnel_0003"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0024",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0024",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -1669,7 +1887,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1681,11 +1915,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1697,6 +1935,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1705,11 +1947,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1725,53 +1967,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
         "sourceId": "constant_payshop_wpn_funnel_0004"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0007",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0007",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "battlePass",
-        "sourceId": "item_obtain_bp"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_6"
       }
     ]
   },
@@ -1785,7 +1985,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1797,11 +2013,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1813,6 +2033,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1821,11 +2045,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1841,23 +2065,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -1900,6 +2108,10 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -1913,7 +2125,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -1925,11 +2153,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -1941,6 +2173,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -1949,11 +2185,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -1969,23 +2205,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -1994,6 +2214,100 @@ export const wikiWeapons = [
       {
         "categoryId": "shop",
         "sourceId": "domainshop_goods_map01_2008"
+      }
+    ]
+  },
+  {
+    "id": "wpn_funnel_0008",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_funnel_0010",
+    "weaponTypeId": "2",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_funnel_0008"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_common_advlevel"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
       }
     ]
   },
@@ -2007,11 +2321,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
@@ -2026,20 +2352,8 @@ export const wikiWeapons = [
         "sourceId": "weponbox_1_2_3"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_2_2"
+        "sourceId": "weekly_payshop_wpn_funnel_0009"
       },
       {
         "categoryId": "shop",
@@ -2047,7 +2361,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gacha_beginner"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
       },
       {
         "categoryId": "chest",
@@ -2055,11 +2369,19 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
+        "sourceId": "item_case_wpn_selfselect_gacha_beginner"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
       },
       {
         "categoryId": "chest",
@@ -2071,15 +2393,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
       }
     ]
   },
@@ -2093,11 +2407,19 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -2117,7 +2439,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -2129,7 +2451,23 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_5_6"
+        "sourceId": "weekly_payshop_wpn_6_1_2_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
       },
       {
         "categoryId": "chest",
@@ -2145,37 +2483,45 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
-      },
-      {
-        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
       }
     ]
   },
   {
-    "id": "wpn_lance_0008",
+    "id": "wpn_sword_0015",
     "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_lance_0008",
-    "weaponTypeId": "5",
+    "rarity": 5,
+    "imageId": "wpn_sword_0015",
+    "weaponTypeId": "1",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -2187,11 +2533,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -2203,6 +2553,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -2211,11 +2565,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -2231,31 +2585,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_sword_0015"
       },
       {
         "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_lance_0008"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "shop_common_wpn_lance_0008"
+        "sourceId": "domainshop_goods_map01_2009"
       }
     ]
   },
@@ -2278,30 +2616,50 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_pistol_0001",
+    "id": "wpn_lance_0012",
     "category": "weapons",
-    "rarity": 3,
-    "imageId": "wpn_pistol_0001",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "explore",
-        "sourceId": "item_obtain_explore"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0012",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_funnel_0012",
-    "weaponTypeId": "2",
+    "rarity": 6,
+    "imageId": "wpn_lance_0012",
+    "weaponTypeId": "5",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_lance_0012"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0005",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_sword_0005",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -2313,11 +2671,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -2329,6 +2691,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -2337,11 +2703,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -2357,11 +2723,53 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_sword_0005"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_1"
+      }
+    ]
+  },
+  {
+    "id": "wpn_funnel_0012",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_funnel_0012",
+    "weaponTypeId": "2",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_5_1"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
@@ -2369,11 +2777,55 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
+        "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
         "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
       },
       {
         "categoryId": "shop",
@@ -2404,96 +2856,6 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_funnel_0014",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_funnel_0014",
-    "weaponTypeId": "2",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_funnel_0014"
-      }
-    ]
-  },
-  {
     "id": "wpn_funnel_0015",
     "category": "weapons",
     "rarity": 6,
@@ -2504,50 +2866,6 @@ export const wikiWeapons = [
       {
         "categoryId": "gacha",
         "sourceId": "weponbox_1_2_1"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0016",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_funnel_0016",
-    "weaponTypeId": "2",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0017",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_funnel_0017",
-    "weaponTypeId": "2",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "battlePass",
-        "sourceId": "item_obtain_bp"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_6"
       }
     ]
   },
@@ -2570,298 +2888,10 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0015",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0015",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_sword_0015"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "domainshop_goods_map01_2009"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0019",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0019",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_sword_0019"
-      }
-    ]
-  },
-  {
-    "id": "wpn_funnel_0019",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_funnel_0019",
-    "weaponTypeId": "2",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0005",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0005",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_sword_0005"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_1"
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -2880,198 +2910,10 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
-      }
-    ]
-  },
-  {
-    "id": "wpn_sword_0007",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_sword_0007",
-    "weaponTypeId": "1",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_sword_0007"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "domainshop_goods_map01_2001"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_1"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0003",
-    "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_lance_0003",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_lance_0003"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "shop_common_wpn_lance_0003"
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -3106,20 +2948,118 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
   {
-    "id": "wpn_lance_0004",
+    "id": "wpn_sword_0012",
     "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_lance_0004",
+    "rarity": 6,
+    "imageId": "wpn_sword_0012",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_4_4"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_sword_0012"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gacha_beginner"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_lance_0003",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_lance_0003",
     "weaponTypeId": "5",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -3131,11 +3071,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -3147,6 +3091,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -3155,11 +3103,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -3175,121 +3123,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_lance_0003"
       },
       {
         "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_lance_0004"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0006",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_lance_0006",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_lance_0006"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "domainshop_goods_map01_2007"
+        "sourceId": "shop_common_wpn_lance_0003"
       }
     ]
   },
@@ -3308,16 +3150,32 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_sword_0009",
+    "id": "wpn_lance_0006",
     "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_sword_0009",
-    "weaponTypeId": "1",
+    "rarity": 5,
+    "imageId": "wpn_lance_0006",
+    "weaponTypeId": "5",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -3329,11 +3187,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -3345,6 +3207,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -3353,11 +3219,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -3373,31 +3239,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_lance_0006"
       },
       {
         "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_sword_0009"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "shop_common_wpn_sword_0009"
+        "sourceId": "domainshop_goods_map01_2007"
       }
     ]
   },
@@ -3411,6 +3261,14 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
@@ -3423,11 +3281,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
@@ -3439,19 +3301,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "shop",
@@ -3459,7 +3309,23 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_1_4"
+        "sourceId": "weekly_payshop_wpn_6_1_4_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
       },
       {
         "categoryId": "chest",
@@ -3471,11 +3337,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
       },
       {
         "categoryId": "chest",
@@ -3483,889 +3345,19 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0011",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0011",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_3_3"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_lance_0011"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_common_advlevel"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0012",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0012",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_lance_0012"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0009",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_pistol_0009",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_4_6"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_pistol_0009"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0013",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_lance_0013",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_lance_0013"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0008",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_pistol_0008",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_pistol_0008"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_3_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_common_advlevel"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_2"
-      },
-      {
-        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_2"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0014",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0014",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0015",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0015",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      }
-    ]
-  },
-  {
-    "id": "wpn_lance_0016",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_lance_0016",
-    "weaponTypeId": "5",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "battlePass",
-        "sourceId": "item_obtain_bp"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_5"
-      },
-      {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_bp_6"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0002",
-    "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_pistol_0002",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_pistol_0002"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "shop_common_wpn_pistol_0002"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0003",
-    "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_pistol_0003",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_pistol_0003"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "shop_common_wpn_pistol_0003"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0006",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_pistol_0006",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "constant_payshop_wpn_pistol_0006"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "domainshop_goods_map01_2004"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0010",
-    "category": "weapons",
-    "rarity": 6,
-    "imageId": "wpn_pistol_0010",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      }
-    ]
-  },
-  {
-    "id": "wpn_pistol_0012",
-    "category": "weapons",
-    "rarity": 5,
-    "imageId": "wpn_pistol_0012",
-    "weaponTypeId": "6",
-    "maxLevel": 90,
-    "acquisitionSources": [
-      {
-        "categoryId": "gacha",
-        "sourceId": "rerun_wpn_yvonne"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_4"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_5"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_3"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "daily_payshop_wpn_pistol_0012"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_2"
       }
     ]
   },
@@ -4380,6 +3372,104 @@ export const wikiWeapons = [
       {
         "categoryId": "explore",
         "sourceId": "item_obtain_explore"
+      }
+    ]
+  },
+  {
+    "id": "wpn_lance_0013",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_lance_0013",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_lance_0013"
       }
     ]
   },
@@ -4402,16 +3492,46 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_sword_0008",
+    "id": "wpn_lance_0014",
     "category": "weapons",
-    "rarity": 4,
-    "imageId": "wpn_sword_0008",
+    "rarity": 6,
+    "imageId": "wpn_lance_0014",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0007",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_sword_0007",
     "weaponTypeId": "1",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -4423,11 +3543,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -4439,6 +3563,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -4447,11 +3575,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -4467,11 +3595,71 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_sword_0007"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "domainshop_goods_map01_2001"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_1"
+      }
+    ]
+  },
+  {
+    "id": "wpn_lance_0015",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_lance_0015",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0008",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_sword_0008",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_5_1"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_1"
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
@@ -4479,11 +3667,55 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
+        "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
         "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
       },
       {
         "categoryId": "shop",
@@ -4496,20 +3728,46 @@ export const wikiWeapons = [
     ]
   },
   {
-    "id": "wpn_sword_0012",
+    "id": "wpn_lance_0016",
     "category": "weapons",
     "rarity": 6,
-    "imageId": "wpn_sword_0012",
+    "imageId": "wpn_lance_0016",
+    "weaponTypeId": "5",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0009",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_sword_0009",
     "weaponTypeId": "1",
     "maxLevel": 90,
     "acquisitionSources": [
       {
         "categoryId": "gacha",
-        "sourceId": "weaponbox_constant_2"
+        "sourceId": "rerun_wpn_tangtang"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "rerun_wpn_yvonne"
       },
       {
         "categoryId": "gacha",
@@ -4517,7 +3775,19 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_2_2"
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
       },
       {
         "categoryId": "gacha",
@@ -4525,19 +3795,633 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_2"
       },
       {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_6_1_4_4"
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
       },
       {
         "categoryId": "shop",
-        "sourceId": "payshop_purple_wpn_sword_0012"
+        "sourceId": "constant_payshop_wpn_sword_0009"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "shop_common_wpn_sword_0009"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0002",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_pistol_0002",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_pistol_0002"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "shop_common_wpn_pistol_0002"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0003",
+    "category": "weapons",
+    "rarity": 4,
+    "imageId": "wpn_pistol_0003",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_pistol_0003"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "shop_common_wpn_pistol_0003"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0004",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_pistol_0004",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_pistol_0004"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0005",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_pistol_0005",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gacha_beginner"
+        "sourceId": "item_case_wpn_selfselect_bp_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0006",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_pistol_0006",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "constant_payshop_wpn_pistol_0006"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "domainshop_goods_map01_2004"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0022",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0022",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0008",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_pistol_0008",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_pistol_0008"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_3_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_4_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_common_advlevel"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
       },
       {
         "categoryId": "chest",
@@ -4545,15 +4429,113 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
+      },
+      {
+        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
       },
       {
         "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
+      },
+      {
+        "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_c_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_pistol_0009",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_pistol_0009",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_4_6"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_pistol_0009"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_tangtang"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
       },
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
       },
       {
         "categoryId": "chest",
@@ -4566,6 +4548,132 @@ export const wikiWeapons = [
     ]
   },
   {
+    "id": "wpn_pistol_0010",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_pistol_0010",
+    "weaponTypeId": "6",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0010",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0010",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "battlePass",
+        "sourceId": "item_obtain_bp"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_4"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_5"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0011",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0011",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_1_2"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_sword_0011"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_5_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_3_1"
+      }
+    ]
+  },
+  {
     "id": "wpn_sword_0013",
     "category": "weapons",
     "rarity": 6,
@@ -4573,6 +4681,14 @@ export const wikiWeapons = [
     "weaponTypeId": "1",
     "maxLevel": 90,
     "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
       {
         "categoryId": "gacha",
         "sourceId": "weaponbox_constant_4"
@@ -4590,24 +4706,16 @@ export const wikiWeapons = [
         "sourceId": "weponbox_1_2_1"
       },
       {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
-      },
-      {
-        "categoryId": "shop",
-        "sourceId": "weekly_payshop_wpn_sword_0013"
-      },
-      {
         "categoryId": "shop",
         "sourceId": "payshop_purple_wpn_sword_0013"
       },
       {
-        "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_3_4"
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
+        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
       },
       {
         "categoryId": "chest",
@@ -4619,7 +4727,93 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "chest",
-        "sourceId": "item_case_wpn_selfselect_gahca_c_5"
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_1_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_6_1"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0014",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0014",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_6_1_2_7"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_sword_0014"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_yvonne"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_common_advlevel"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_1"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_3"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_2_2"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_1_0_3"
       }
     ]
   },
@@ -4672,6 +4866,10 @@ export const wikiWeapons = [
       {
         "categoryId": "chest",
         "sourceId": "item_case_wpn_selfselect_bp_6"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_bp_7"
       }
     ]
   },
@@ -4685,7 +4883,23 @@ export const wikiWeapons = [
     "acquisitionSources": [
       {
         "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
       },
       {
         "categoryId": "gacha",
@@ -4697,11 +4911,15 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weaponbox_constant_3"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_0_3"
+        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "gacha",
@@ -4713,6 +4931,10 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
         "sourceId": "weponbox_1_0_1"
       },
       {
@@ -4721,11 +4943,11 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_1"
+        "sourceId": "weponbox_1_3_2"
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_1_2"
+        "sourceId": "weponbox_1_0_3"
       },
       {
         "categoryId": "gacha",
@@ -4741,23 +4963,7 @@ export const wikiWeapons = [
       },
       {
         "categoryId": "gacha",
-        "sourceId": "weponbox_1_5_1"
-      },
-      {
-        "categoryId": "gacha",
         "sourceId": "weponbox_1_3_1"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_3_2"
-      },
-      {
-        "categoryId": "gacha",
-        "sourceId": "weponbox_1_4_1"
       },
       {
         "categoryId": "shop",
@@ -4766,6 +4972,242 @@ export const wikiWeapons = [
       {
         "categoryId": "shop",
         "sourceId": "domainshop_goods_map01_2006"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0021",
+    "category": "weapons",
+    "rarity": 6,
+    "imageId": "wpn_sword_0021",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "payshop_purple_wpn_sword_0021"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "weekly_payshop_wpn_sword_0021"
+      },
+      {
+        "categoryId": "chest",
+        "sourceId": "item_case_wpn_selfselect_gahca_c_3"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0019",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_sword_0019",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_sword_0019"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0020",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_sword_0020",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_tangtang"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "rerun_wpn_yvonne"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_5_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_1_6_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_4_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_4"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weaponbox_constant_5"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_1_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_0_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_1"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_2"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_2_3"
+      },
+      {
+        "categoryId": "gacha",
+        "sourceId": "weponbox_1_3_1"
+      },
+      {
+        "categoryId": "shop",
+        "sourceId": "daily_payshop_wpn_sword_0020"
+      }
+    ]
+  },
+  {
+    "id": "wpn_sword_0023",
+    "category": "weapons",
+    "rarity": 5,
+    "imageId": "wpn_sword_0023",
+    "weaponTypeId": "1",
+    "maxLevel": 90,
+    "acquisitionSources": [
+      {
+        "categoryId": "activity",
+        "sourceId": "item_obtain_activity"
       }
     ]
   },

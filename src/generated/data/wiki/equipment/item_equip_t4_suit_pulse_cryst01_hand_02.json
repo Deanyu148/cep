@@ -1,0 +1,76 @@
+{
+  "id": "item_equip_t4_suit_pulse_cryst01_hand_02",
+  "category": "equipment",
+  "stats": [
+    {
+      "attributeId": "3",
+      "values": [
+        42,
+        42,
+        42,
+        42
+      ]
+    },
+    {
+      "attributeId": "42",
+      "values": [
+        65,
+        71,
+        78,
+        84
+      ]
+    },
+    {
+      "attributeId": "39",
+      "values": [
+        43,
+        47,
+        51,
+        55
+      ]
+    },
+    {
+      "attributeId": "CrystAndPulseDamageIncrease",
+      "values": [
+        0.19166666666666668,
+        0.21083333,
+        0.23,
+        0.24916667
+      ]
+    }
+  ],
+  "suitEffects": [
+    {
+      "id": "passive_equipsuit_cpinflict_01",
+      "requiredPieces": 3,
+      "values": {
+        "phy_spell_up": 30,
+        "pulse_dmg_up": 0.5,
+        "duration": 10,
+        "cryst_dmg_up": 0.5,
+        "duration2": 10
+      }
+    }
+  ],
+  "craftingRecipes": [
+    {
+      "chainId": 4003,
+      "discount": 0.01,
+      "isDefault": true,
+      "materials": [
+        {
+          "itemId": "item_equip_script_4_3",
+          "count": 50,
+          "iconId": "item_equip_script_4_3",
+          "rarity": 4
+        },
+        {
+          "itemId": "item_domain_jinlong_coupon",
+          "count": 360,
+          "iconId": "item_domain_jinlong_coupon",
+          "rarity": 5
+        }
+      ]
+    }
+  ]
+}

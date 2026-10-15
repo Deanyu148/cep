@@ -1,0 +1,74 @@
+{
+  "id": "item_equip_t4_suit_atk02_hand_03",
+  "category": "equipment",
+  "stats": [
+    {
+      "attributeId": "3",
+      "values": [
+        42,
+        42,
+        42,
+        42
+      ]
+    },
+    {
+      "attributeId": "41",
+      "values": [
+        65,
+        71,
+        78,
+        84
+      ]
+    },
+    {
+      "attributeId": "39",
+      "values": [
+        43,
+        47,
+        51,
+        55
+      ]
+    },
+    {
+      "attributeId": "33",
+      "values": [
+        0.345,
+        0.3795,
+        0.414,
+        0.4485
+      ]
+    }
+  ],
+  "suitEffects": [
+    {
+      "id": "passive_equipsuit_atk_02",
+      "requiredPieces": 3,
+      "values": {
+        "atk_up": 0.15,
+        "dmg_up": 0.2,
+        "max_stack": 3
+      }
+    }
+  ],
+  "craftingRecipes": [
+    {
+      "chainId": 4003,
+      "discount": 0.01,
+      "isDefault": true,
+      "materials": [
+        {
+          "itemId": "item_equip_script_4_3",
+          "count": 50,
+          "iconId": "item_equip_script_4_3",
+          "rarity": 4
+        },
+        {
+          "itemId": "item_domain_jinlong_coupon",
+          "count": 360,
+          "iconId": "item_domain_jinlong_coupon",
+          "rarity": 5
+        }
+      ]
+    }
+  ]
+}

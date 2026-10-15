@@ -1,6 +1,6 @@
 {
   "gat_passive_attr_agi": "Agility",
-  "gat_passive_attr_atk": "Attack",
+  "gat_passive_attr_atk": "ATK",
   "gat_passive_attr_crirate": "Critical Rate",
   "gat_passive_attr_pulsedam": "Electric DMG",
   "gst_passive_tacafter": "Flow",
@@ -12,7 +12,7 @@
   "gst_passive_crit": "Fracture",
   "gat_passive_attr_hp": "HP",
   "gat_passive_attr_icedam": "Cryo DMG",
-  "gat_passive_attr_magicdam": "Arts DMG Boost",
+  "gat_passive_attr_magicdam": "Arts DMG",
   "gat_passive_attr_naturaldam": "Nature DMG",
   "gst_passive_spirit": "Inspiring",
   "gat_passive_attr_phydam": "Physical DMG",
