@@ -11,6 +11,7 @@ import { WeaponCard } from '@/components/essence/weapon-card'
 import { DungeonCard } from '@/components/essence/dungeon-card'
 import { EssenceSettingsDialog } from '@/components/essence/essence-settings-dialog'
 import { AccountSwitcher } from '@/components/essence/account-switcher'
+import { MaaendImportHint } from '@/components/essence/maamend-import-hint'
 import { CustomWeaponDialog } from '@/components/essence/custom-weapon-dialog'
 import { useMatrixStore } from '@/stores/useMatrixStore'
 import { useEssenceSettingsStore } from '@/stores/useEssenceSettingsStore'
@@ -468,6 +469,9 @@ export default function EssencePlannerPage() {
           onOpenChange={setCustomWeaponOpen}
         />
       </div>
+
+      {/* 一次性 MaaEND 导入指引（关闭后持久隐藏，文件导入本身走全屏拖拽） */}
+      <MaaendImportHint />
 
       {/* Desktop layout: left weapon grid + right plans */}
       <div className="hidden md:flex flex-1 overflow-hidden">
