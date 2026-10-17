@@ -10,10 +10,10 @@ import { Button } from '@/components/ui/button'
 import { Check } from 'lucide-react'
 import { useMobileLongPressTooltip } from '@/hooks/use-mobile-long-press-tooltip'
 import { withImageCacheVersion } from '@/lib/image-url'
-import { getCharacterAvatarPath } from '@/lib/character-images'
+import { getWeaponWikiPreview } from '@/lib/weapon-wiki-preview'
+import { CharacterAvatar } from '@/components/shared/character-avatar'
 import { PlannerWikiPreview } from '@/components/shared/planner-wiki-preview'
 import { ItemFrameBackground } from '@/components/shared/item-frame-background'
-import { getWeaponWikiPreview } from '@/lib/weapon-wiki-preview'
 import { acquisitionCategoryIds, acquisitionCategoryLabelText } from '@/lib/weapon-acquisition'
 import { useWikiTranslations } from '@/hooks/use-wiki-translations'
 import { weaponStatLabel } from '@/lib/weapon-stats'
@@ -95,7 +95,9 @@ export const WeaponCard = memo(function WeaponCard({
       onPointerCancel={isMobile ? handlePointerEnd : undefined}
       onContextMenu={isMobile ? handleContextMenu : undefined}
       className={cn(
-        'group relative flex items-center justify-center aspect-square w-full rounded-lg border cursor-pointer overflow-hidden transition-all',
+        // @container: the operator avatars scale with the card (cqw below) instead of
+        // sitting at a fixed size on a fluid tile.
+        'group @container relative flex items-center justify-center aspect-square w-full rounded-lg border cursor-pointer overflow-hidden transition-all',
         isMobile && 'touch-manipulation select-none [-webkit-touch-callout:none] [-webkit-user-select:none] [&_img]:pointer-events-none [&_img]:select-none',
         disabled && 'opacity-30 cursor-not-allowed pointer-events-none',
         !disabled && [
@@ -125,25 +127,21 @@ export const WeaponCard = memo(function WeaponCard({
       {/* Character avatars */}
       {weapon.chars.length > 0 && (
         <div className="absolute top-2 left-2 flex gap-1 z-20">
-          {weapon.chars.map((char) => {
-            const avatarPath = getCharacterAvatarPath(char)
-            if (!avatarPath) return null
-
-            return (
-              <div
-                key={char}
-                className="relative size-8 rounded-full bg-black/60 border border-white/35 shadow-md overflow-hidden"
-              >
-                <Image
-                  src={withImageCacheVersion(avatarPath)}
-                  alt={char}
-                  fill
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            )
-          })}
+          {weapon.chars.map((char) => (
+            // Scales with the card via the @container on the trigger instead of a
+            // fixed size on a fluid tile. Two portraits share the tile, so they
+            // stay smaller (114px cards: 41px single, 30px paired).
+            <CharacterAvatar
+              key={char}
+              name={char}
+              className={cn(
+                'border border-white/35 shadow-md',
+                weapon.chars.length > 1
+                  ? 'size-[clamp(1.5rem,26cqw,2rem)]'
+                  : 'size-[clamp(2rem,36cqw,2.75rem)]',
+              )}
+            />
+          ))}
         </div>
       )}
 
@@ -224,6 +222,7 @@ export const WeaponCard = memo(function WeaponCard({
             { label: weaponStatLabel(weapon.elementalDamage, t), ...preview.values[1] },
             { label: weaponStatLabel(weapon.specialAbility, t), ...preview.values[2], truncate: true },
           ].filter((_, index) => [weapon.primaryStat, weapon.elementalDamage, weapon.specialAbility][index] !== null)}
+          characters={weapon.chars}
           footer={<p className="text-xs text-muted-foreground">{t('essence.acquisitionSourceLabel')}: {acquisitionLabel}</p>}
           wikiHref={!isCustom && !isPreview ? preview.wikiHref : undefined}
         />

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getCharacterAvatarPath } from './character-images'
+import { getCharacterAvatarPath, getCharacterId } from './character-images'
 
 describe('getCharacterAvatarPath', () => {
   it('resolves released character names to canonical IDs', () => {
@@ -30,5 +30,24 @@ describe('getCharacterAvatarPath', () => {
 
   it('does not invent paths for unknown characters', () => {
     expect(getCharacterAvatarPath('不存在')).toBeNull()
+  })
+})
+
+describe('getCharacterId', () => {
+  it('maps a zh-CN name to the game i18n id used for localized labels', () => {
+    expect(getCharacterId('佩丽卡')).toBe('chr_0004_pelica')
+    expect(getCharacterId('洛茜')).toBe('chr_0028_wulfa')
+  })
+
+  it.each(['管理员', '管理员(女)', '管理员 (女)', '管理员(男)'])(
+    'maps every administrator variant onto the single administrator entry: %s',
+    (name) => {
+      expect(getCharacterId(name)).toBe('chr_9000_endmin')
+    }
+  )
+
+  it('returns null for names with no game entry (preview / custom names)', () => {
+    expect(getCharacterId('不存在')).toBeNull()
+    expect(getCharacterId('明河')).toBeNull()
   })
 })

@@ -69,6 +69,7 @@ export function EquipmentWeaponConfig() {
       { label: weaponStatLabel(source.elementalDamage, allT), ...preview.values[1] },
       { label: weaponStatLabel(source.specialAbility, allT), ...preview.values[2], truncate: true },
     ].filter((_, index) => [source.primaryStat, source.elementalDamage, source.specialAbility][index] !== null)}
+    characters={source.chars}
     footer={<p className="text-xs text-muted-foreground">{allT('essence.acquisitionSourceLabel')}: {acquisitionLabel}</p>}
     wikiHref={preview.wikiHref}
   />
