@@ -52,6 +52,18 @@ describe('pruneSubmoduleDocs', () => {
     expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 0, bytes: 0 })
   })
 
+  it('removes the submodule .git pointer so downstream git never records a gitlink', () => {
+    const out = createFixture()
+    writeTree(out, {
+      'game-i18n/.git': 'gitdir: ../../.git/modules/public/game-i18n\n',
+      'game-i18n/manifest.json': '{}',
+    })
+
+    expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 1, bytes: 44 })
+    expect(existsSync(path.join(out, 'game-i18n', '.git'))).toBe(false)
+    expect(existsSync(path.join(out, 'game-i18n', 'manifest.json'))).toBe(true)
+  })
+
   it('is a no-op when the export has no game-i18n directory', () => {
     const out = createFixture()
     expect(pruneSubmoduleDocs(out)).toEqual({ deleted: 0, bytes: 0 })

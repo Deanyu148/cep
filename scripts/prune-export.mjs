@@ -225,19 +225,23 @@ export function pruneDuplicateIconMedia(outDir) {
 /**
  * 删除 out/game-i18n/ 下不属于导出内容的仓库元文件。
  *
- * `public/game-i18n` 是 cmyyx/cep-assets 子模块的工作区，子仓根的 README.md 与
- * .gitattributes 会被 Next 的静态导出原样复制到 out/，从而作为站点资源公开。
- * 导出只写 manifest.json 与 <locale>/<chunk>.json，这两个文件不是导出产物。
+ * `public/game-i18n` 是 cmyyx/cep-assets 子模块的工作区，Next 的静态导出会原样复制
+ * 子仓根的 README.md、.gitattributes 与 .git 指针文件：
+ * - README.md / .gitattributes 会被当成站点资源公开；
+ * - .git 会让下游 `git add` 把整个目录登记成 gitlink (mode 160000)。deploy 分支没有
+ *   .gitmodules，托管平台检出后该目录为空 → 线上 /game-i18n/* 全部 404。
+ * 导出只写 manifest.json 与 <locale>/<chunk>.json，这三个都不是导出产物。
  */
 export function pruneSubmoduleDocs(outDir) {
-  const names = ['README.md', '.gitattributes']
+  const names = ['README.md', '.gitattributes', '.git']
   let deleted = 0
   let bytes = 0
   for (const name of names) {
     const entryPath = path.join(outDir, 'game-i18n', name)
     if (!existsSync(entryPath)) continue
-    bytes += statSync(entryPath).size
-    unlinkSync(entryPath)
+    const stats = statSync(entryPath)
+    if (stats.isFile()) bytes += stats.size
+    rmSync(entryPath, { recursive: true, force: true })
     deleted += 1
   }
   return { deleted, bytes }
@@ -269,7 +273,9 @@ function main() {
 
   const docs = pruneSubmoduleDocs(outDir)
   if (docs.deleted > 0) {
-    console.log(`prune-export: 已删除 out/game-i18n 下 ${docs.deleted} 个子模块元文件 (README.md/.gitattributes)`)
+    console.log(
+      `prune-export: 已删除 out/game-i18n 下 ${docs.deleted} 个子模块元文件 (README.md/.gitattributes/.git)`,
+    )
   }
 }
 

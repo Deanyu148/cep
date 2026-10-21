@@ -146,7 +146,27 @@ jobs:
           # wrangler.jsonc 需在 deploy 分支根（与 public/ 同级），CF Workers 从该目录部署；
           # 移出站点根，避免部署配置随站点公开可读
           mv public/wrangler.jsonc ./wrangler.jsonc
+          # public/game-i18n 是 cmyyx/cep-assets 子模块，产物必须以普通文件落进 deploy 分支：
+          # 1) .git 指针残留时，git add 会把整个目录登记成 gitlink (mode 160000)；
+          # 2) deploy 分支没有 .gitmodules，托管平台检出后目录为空，线上 /game-i18n/* 全部 404 (v1.6.2 即如此)。
+          # 构建阶段 prune-export 已剥离 .git，这里再来一次兜底。
+          rm -rf public/game-i18n/.git
+          if [ ! -f public/game-i18n/manifest.json ]; then
+            echo "::error::public/game-i18n 内容缺失 (子模块未初始化?)，线上 /game-i18n/* 会 404"
+            exit 1
+          fi
+          # 索引里已存在 source 树的 gitlink 条目时，git add 不会进入该路径把它替换成文件，
+          # 必须先剔除条目再 add (实测：只删 .git 不够)。
+          git rm -r --cached -f --ignore-unmatch public/game-i18n >/dev/null
           git add -A
+          if git ls-files --stage public/game-i18n | grep -q '^160000'; then
+            echo "::error::public/game-i18n 仍被子模块指针登记 (mode 160000)，线上 /game-i18n/* 会 404"
+            exit 1
+          fi
+          if ! git ls-files --error-unmatch public/game-i18n/manifest.json >/dev/null 2>&1; then
+            echo "::error::public/game-i18n/manifest.json 未入库"
+            exit 1
+          fi
           COMMIT_MSG=$(git log -1 --pretty=%s $GITHUB_SHA)
           git commit -m "deploy: ${DEPLOY_LABEL} - ${COMMIT_MSG}"
           git push origin "deploy-temp:deploy" --force
